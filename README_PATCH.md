@@ -1,30 +1,47 @@
-# Sprint 9 Command Conflict Patch
+# Sprint 11 - Big MMO Progression Expansion
 
-Fixes Railway startup crash:
+Replace/upload these folders/files into your GitHub repo, then commit:
 
-- `CommandAlreadyRegistered: Command 'questboard' already registered.`
-- Prevents the next likely duplicate `/rest` conflict.
+`Sprint 11 - Crew achievements professions and bounty systems`
 
-## Replace these files
+## Adds real systems
 
-- `cogs/world.py`
-- `cogs/battle.py`
+### Crew System
+- `/crew`
+- `/crewcreate`
+- `/crewrecruit`
+- `/crewdonate`
+- Crew treasury, fame, XP, leveling, roster
 
-## What changed
+### Achievement System
+- `/achievements`
+- `/claimcheck`
+- Persistent achievement unlocks and rewards
 
-- Removed the old `/questboard` command from `cogs/world.py`.
-  - The new quest system in `cogs/quests.py` owns `/questboard` now.
-- Removed duplicate `/rest` from `cogs/battle.py`.
-  - The existing boss combat cog already owns `/rest`.
+### Profession System
+- `/professions`
+- `/gatherjob fishing|mining|foraging|cooking`
+- Profession XP, profession leveling, item drops, Beli rewards
 
-## Commit message
+### Bounty System
+- `/bounty`
+- `/bountyleaderboard`
+- `/addbounty` owner-only
+- Persistent bounty logs
 
-`Fix duplicate questboard and rest command registration`
+## New files
+- `cogs/crew.py`
+- `cogs/achievements.py`
+- `cogs/professions.py`
+- `cogs/bounty.py`
+- `services/crew_service.py`
+- `services/achievement_service.py`
+- `services/profession_service.py`
+- `services/bounty_service.py`
+- `data/achievements.json`
+- `sql/011_big_progression.sql`
 
-After Railway redeploys, test:
+## Modified
+- `bot.py`
 
-1. `/stats`
-2. `/questboard`
-3. `/queststart quest_id:foosha_training`
-4. `/battle enemy_id:bandit_recruit`
-5. `/battleaction action:attack`
+Railway should auto-run the SQL migration on startup because your database initializer loads every `sql/*.sql` file.

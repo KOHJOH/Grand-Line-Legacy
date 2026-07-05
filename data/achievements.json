@@ -1,0 +1,7 @@
+[
+  {"id":"first_steps","name":"First Steps","description":"Reach level 1 and begin your legacy.","stat":"level","target":1,"xp":25,"beli":100},
+  {"id":"rookie_pirate","name":"Rookie Pirate","description":"Reach level 5.","stat":"level","target":5,"xp":150,"beli":500},
+  {"id":"super_rookie","name":"Super Rookie","description":"Reach level 10.","stat":"level","target":10,"xp":500,"beli":2000},
+  {"id":"wallet_warrior","name":"Wallet Warrior","description":"Hold 5,000 Beli.","stat":"beli","target":5000,"xp":100,"beli":250},
+  {"id":"crew_founder","name":"Crew Founder","description":"Join or create a crew.","stat":"crew","target":1,"xp":250,"beli":1000}
+]

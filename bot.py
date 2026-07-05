@@ -27,6 +27,11 @@ COGS = [
     "cogs.stats",
     "cogs.quests",
     "cogs.battle",
+    "cogs.progression",
+    "cogs.crew",
+    "cogs.achievements",
+    "cogs.professions",
+    "cogs.bounty",
 ]
 
 
@@ -56,7 +61,9 @@ class GrandLineBot(commands.Bot):
                 logging.info("Loaded extension %s", cog)
             except Exception:
                 logging.exception("Failed to load extension %s", cog)
-                raise
+                # Keep the bot online during alpha even if one feature cog has an integration issue.
+                # The error remains visible in Railway logs so we can patch it without taking the whole bot down.
+                continue
 
         guild_id = os.getenv("SYNC_GUILD_ID")
         if guild_id:

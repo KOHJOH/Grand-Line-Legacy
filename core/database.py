@@ -18,14 +18,31 @@ class Database:
             await self.pool.close()
 
     async def initialize_schema(self, schema_path: str = "sql/schema.sql") -> None:
+        """Run the base schema and every additive migration in sql/*.sql.
+
+        This keeps Railway deploys simple: every startup safely creates or updates
+        the database without deleting player data. SQL files must be idempotent
+        using CREATE TABLE IF NOT EXISTS / ALTER TABLE ... ADD COLUMN IF NOT EXISTS.
+        """
         if not self.pool:
             raise RuntimeError("Database pool not initialized")
-        path = Path(schema_path)
-        if not path.exists():
+
+        base_path = Path(schema_path)
+        if not base_path.exists():
             raise FileNotFoundError(f"Missing database schema file: {schema_path}")
-        sql = path.read_text(encoding="utf-8")
+
+        paths = [base_path]
+        sql_dir = base_path.parent
+        if sql_dir.exists():
+            for path in sorted(sql_dir.glob("*.sql")):
+                if path.resolve() != base_path.resolve():
+                    paths.append(path)
+
         async with self.pool.acquire() as conn:
-            await conn.execute(sql)
+            for path in paths:
+                sql = path.read_text(encoding="utf-8").strip()
+                if sql:
+                    await conn.execute(sql)
 
     async def fetchrow(self, query: str, *args):
         if not self.pool:

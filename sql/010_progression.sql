@@ -1,0 +1,40 @@
+-- Sprint 10: Progression, daily rewards, training logs, and leaderboard support.
+-- This file is safe to run repeatedly on Railway startup.
+
+ALTER TABLE players ADD COLUMN IF NOT EXISTS strength INTEGER NOT NULL DEFAULT 10;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS defense INTEGER NOT NULL DEFAULT 8;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS speed INTEGER NOT NULL DEFAULT 8;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS focus INTEGER NOT NULL DEFAULT 5;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS skill_points INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS battles_won INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS battles_lost INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS daily_streak INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS last_daily TIMESTAMPTZ;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS last_training TIMESTAMPTZ;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS last_recover TIMESTAMPTZ;
+
+CREATE TABLE IF NOT EXISTS player_cooldowns (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    cooldown_key TEXT NOT NULL,
+    expires_at TIMESTAMPTZ NOT NULL,
+    metadata JSONB NOT NULL DEFAULT '{}'::jsonb,
+    PRIMARY KEY(discord_id, cooldown_key)
+);
+
+CREATE TABLE IF NOT EXISTS player_training_log (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    stat_name TEXT NOT NULL,
+    xp_gained INTEGER NOT NULL DEFAULT 0,
+    beli_spent INTEGER NOT NULL DEFAULT 0,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS daily_claims (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    reward_xp INTEGER NOT NULL DEFAULT 0,
+    reward_beli INTEGER NOT NULL DEFAULT 0,
+    streak INTEGER NOT NULL DEFAULT 1,
+    claimed_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
