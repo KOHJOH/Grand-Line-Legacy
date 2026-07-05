@@ -40,6 +40,7 @@ COGS = [
     "cogs.ship_jobs",
     "cogs.alpha_admin",
     "cogs.raids",
+    "cogs.east_blue",
 ]
 
 

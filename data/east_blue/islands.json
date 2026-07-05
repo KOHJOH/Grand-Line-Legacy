@@ -1,0 +1,11 @@
+{
+  "islands": [
+    {"id":"foosha_village","name":"Foosha Village","required_level":1,"travel_cost":0,"summary":"Starter island, mountain bandits, docks, and training fields.","arrival_text":"The windmill turns over the quiet harbor."},
+    {"id":"shells_town","name":"Shells Town","required_level":3,"travel_cost":75,"summary":"Marine base island with corrupt officers and bounty posters.","arrival_text":"Marine flags snap above the base walls."},
+    {"id":"orange_town","name":"Orange Town","required_level":5,"travel_cost":100,"summary":"A damaged town haunted by clown pirates and hidden treasure.","arrival_text":"Broken rooftops and circus banners line the streets."},
+    {"id":"syrup_village","name":"Syrup Village","required_level":8,"travel_cost":140,"summary":"Quiet village, mansion plots, and pirate ambushes.","arrival_text":"A long hill road leads to a mansion above the coast."},
+    {"id":"baratie","name":"Baratie","required_level":12,"travel_cost":200,"summary":"Sea restaurant, duelists, cooks, and bounty hunters.","arrival_text":"The smell of grilled sea king rolls across the deck."},
+    {"id":"arlong_park","name":"Arlong Park","required_level":16,"travel_cost":300,"summary":"Occupied island with fish-man enforcers and liberation quests.","arrival_text":"A shark-toothed gate rises over the water."},
+    {"id":"loguetown","name":"Loguetown","required_level":22,"travel_cost":500,"summary":"The town of beginnings and endings, elite Marines, and Grand Line access.","arrival_text":"Storm clouds gather over the execution platform."}
+  ]
+}

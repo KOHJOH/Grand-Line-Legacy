@@ -1,93 +1,45 @@
-# Grand Line: Legacy — Cumulative Update Sprint 12–15
+# Grand Line: Legacy — Cumulative Sprint 16–20 Update
 
-This is a larger cumulative drop built on top of the Sprint 9–11 bundle.
+This is a larger cumulative gameplay update focused on turning East Blue into a playable progression region.
 
-## Replace / upload these folders/files
+## New cogs
+- `cogs/east_blue.py`
+- `cogs/npcs.py`
+- `cogs/skills.py`
+- `cogs/fruit_world.py`
+- `cogs/sea_routes.py`
 
-- `bot.py`
-- `cogs/`
-- `services/`
-- `data/`
-- `sql/`
-- `core/database.py`
+## New services
+- `services/east_blue_service.py`
+- `services/npc_service.py`
+- `services/skill_service.py`
+- `services/fruit_world_service.py`
+- `services/sea_route_service.py`
 
-## New systems
+## New data
+- `data/east_blue/islands.json`
+- `data/east_blue/npcs.json`
+- `data/skills/skills.json`
+- `data/fruits/fruit_world.json`
 
-### Economy + Market
-- `/market`
-- `/marketlist`
-- `/marketbuy`
-- `/marketcancel`
-- currency ledger
-- player listing storage
-- inventory removal/return on list/cancel
-- seller payout on purchase
+## New commands
+- `/eastblue`
+- `/sailto`
+- `/checkpoints`
+- `/localnpcs`
+- `/talkto`
+- `/skills`
+- `/learnskill`
+- `/trainskill`
+- `/fruitspawns`
+- `/searchfruit`
+- `/spawnfruit`
+- `/searoutes`
+- `/beginvoyage`
+- `/voyageevent`
 
-### Crafting
-- `/recipes`
-- `/craft`
-- recipe data file
-- crafting log
-- ingredient removal/result item creation
-
-### Fishing
-- `/fish`
-- `/fishlog`
-- island-based fishing tables
-- profession XP hook
-- fishing log table
-
-### Dungeons
-- `/dungeonlist`
-- `/enterdungeon`
-- `/dungeonaction`
-- dungeon rooms
-- stamina cost
-- room rewards/traps
-- completion reward
-
-### Raids
-- `/raidboard`
-- `/startraid`
-- `/joinraid`
-- raid lobby table
-- party JSON storage
-
-### World Progression
-- `/unlocks`
-- `/checkpoint`
-- island unlock table
-- respawn checkpoint table
-
-### Ship Missions
-- `/shipmission`
-- stamina cost
-- XP/Beli rewards
-- ship mission log
-
-### Owner Alpha Tools
-- `/grantitem`
-- `/grantbeli`
-
-Requires `OWNER_ID` Railway variable for owner-only commands.
+## Database additions
+Adds tables for island discovery, NPC relationships, player skills, fruit spawns, voyages, and story flags. The startup schema runner will create these automatically on Railway redeploy.
 
 ## Commit message
-
-```txt
-Cumulative update - Sprint 12 to 15 world economy crafting dungeons raids
-```
-
-## Test order after Railway redeploy
-
-1. `/profile`
-2. `/stats`
-3. `/fish`
-4. `/recipes`
-5. `/grantitem item_id:cloth_scrap quantity:5` owner only
-6. `/craft recipe_id:bandage_pack`
-7. `/market`
-8. `/dungeonlist`
-9. `/enterdungeon dungeon_id:bandit_hideout`
-10. `/dungeonaction`
-11. `/raidboard`
-12. `/shipmission`
+`Cumulative update - Sprint 16 to 20 East Blue NPC skills fruit spawns sea routes`

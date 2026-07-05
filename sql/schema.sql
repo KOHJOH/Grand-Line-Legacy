@@ -311,3 +311,71 @@ CREATE TABLE IF NOT EXISTS ocean_encounter_log (
     resolved_at TIMESTAMPTZ
 );
 CREATE INDEX IF NOT EXISTS idx_ocean_encounter_unresolved ON ocean_encounter_log(discord_id, resolved, created_at);
+
+-- Sprint 16-20 cumulative systems: East Blue, NPC dialogue, skills, fruit spawns, sea routes.
+CREATE TABLE IF NOT EXISTS island_discoveries (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    island_id TEXT NOT NULL,
+    discovered_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(discord_id, island_id)
+);
+
+CREATE TABLE IF NOT EXISTS npc_relationships (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    npc_id TEXT NOT NULL,
+    friendship INTEGER NOT NULL DEFAULT 0,
+    talks INTEGER NOT NULL DEFAULT 0,
+    flags JSONB NOT NULL DEFAULT '{}'::jsonb,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(discord_id, npc_id)
+);
+
+CREATE TABLE IF NOT EXISTS player_skills (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    skill_id TEXT NOT NULL,
+    mastery INTEGER NOT NULL DEFAULT 1,
+    xp INTEGER NOT NULL DEFAULT 0,
+    equipped_slot INTEGER,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(discord_id, skill_id)
+);
+
+CREATE TABLE IF NOT EXISTS skill_cooldowns (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    skill_id TEXT NOT NULL,
+    ready_at TIMESTAMPTZ NOT NULL,
+    PRIMARY KEY(discord_id, skill_id)
+);
+
+CREATE TABLE IF NOT EXISTS fruit_spawns (
+    id BIGSERIAL PRIMARY KEY,
+    fruit_id TEXT NOT NULL,
+    fruit_name TEXT NOT NULL,
+    island TEXT NOT NULL,
+    rarity TEXT NOT NULL DEFAULT 'Rare',
+    spawned_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    expires_at TIMESTAMPTZ NOT NULL,
+    claimed_by BIGINT REFERENCES players(discord_id) ON DELETE SET NULL,
+    claimed_at TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS idx_fruit_spawns_active ON fruit_spawns(island, claimed_by, expires_at);
+
+CREATE TABLE IF NOT EXISTS voyages (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    origin TEXT NOT NULL,
+    destination TEXT NOT NULL,
+    encounter_id TEXT,
+    status TEXT NOT NULL DEFAULT 'active',
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    resolved_at TIMESTAMPTZ
+);
+CREATE INDEX IF NOT EXISTS idx_voyages_active ON voyages(discord_id, status, created_at DESC);
+
+CREATE TABLE IF NOT EXISTS story_flags (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    flag_id TEXT NOT NULL,
+    value JSONB NOT NULL DEFAULT '{}'::jsonb,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(discord_id, flag_id)
+);

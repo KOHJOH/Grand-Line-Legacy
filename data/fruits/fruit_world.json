@@ -1,0 +1,14 @@
+{
+  "fruits": [
+    {"id":"gomu_gomu","name":"Gomu Gomu no Mi","rarity":"Legendary","type":"Paramecia"},
+    {"id":"mera_mera","name":"Mera Mera no Mi","rarity":"Mythic","type":"Logia"},
+    {"id":"suna_suna","name":"Suna Suna no Mi","rarity":"Mythic","type":"Logia"},
+    {"id":"bara_bara","name":"Bara Bara no Mi","rarity":"Rare","type":"Paramecia"},
+    {"id":"sube_sube","name":"Sube Sube no Mi","rarity":"Uncommon","type":"Paramecia"},
+    {"id":"moku_moku","name":"Moku Moku no Mi","rarity":"Legendary","type":"Logia"},
+    {"id":"hie_hie","name":"Hie Hie no Mi","rarity":"Mythic","type":"Logia"},
+    {"id":"goro_goro","name":"Goro Goro no Mi","rarity":"Mythic","type":"Logia"},
+    {"id":"ushi_ushi_bison","name":"Ushi Ushi no Mi, Model: Bison","rarity":"Rare","type":"Zoan"},
+    {"id":"tori_tori_falcon","name":"Tori Tori no Mi, Model: Falcon","rarity":"Legendary","type":"Zoan"}
+  ]
+}
