@@ -1,0 +1,34 @@
+{
+  "id": "suna_suna",
+  "name": "Suna Suna no Mi",
+  "rarity": "Legendary",
+  "element": "sand",
+  "awakening_level": 900,
+  "passive": {
+    "bleed_immunity": true
+  },
+  "moves": [
+    {
+      "id": "desert_spada",
+      "name": "Desert Spada",
+      "power": 45,
+      "stamina": 18,
+      "cooldown": 3,
+      "unlock_mastery": 0,
+      "status": "bleed",
+      "status_turns": 3,
+      "status_power": 8
+    },
+    {
+      "id": "ground_death",
+      "name": "Ground Death",
+      "power": 105,
+      "stamina": 44,
+      "cooldown": 7,
+      "unlock_mastery": 250,
+      "status": "bleed",
+      "status_turns": 4,
+      "status_power": 16
+    }
+  ]
+}

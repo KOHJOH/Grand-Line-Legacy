@@ -1,0 +1,46 @@
+{
+  "id": "mera_mera",
+  "name": "Mera Mera no Mi",
+  "rarity": "Legendary",
+  "element": "fire",
+  "awakening_level": 650,
+  "passive": {
+    "burn_immunity": true,
+    "fire_damage": 1.25
+  },
+  "moves": [
+    {
+      "id": "fire_fist",
+      "name": "Fire Fist",
+      "power": 35,
+      "stamina": 14,
+      "cooldown": 2,
+      "unlock_mastery": 0,
+      "status": "burn",
+      "status_turns": 3,
+      "status_power": 8
+    },
+    {
+      "id": "fire_pillar",
+      "name": "Fire Pillar",
+      "power": 62,
+      "stamina": 25,
+      "cooldown": 4,
+      "unlock_mastery": 75,
+      "status": "burn",
+      "status_turns": 4,
+      "status_power": 12
+    },
+    {
+      "id": "great_flame",
+      "name": "Great Flame Commandment",
+      "power": 110,
+      "stamina": 45,
+      "cooldown": 7,
+      "unlock_mastery": 250,
+      "status": "burn",
+      "status_turns": 5,
+      "status_power": 18
+    }
+  ]
+}

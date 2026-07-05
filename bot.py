@@ -41,6 +41,7 @@ COGS = [
     "cogs.alpha_admin",
     "cogs.raids",
     # East Blue is exposed through the prefix router to avoid Discord's 100 global slash-command cap.
+    "cogs.milestone_b",
     "cogs.prefix",
 ]
 

@@ -1,0 +1,37 @@
+{
+  "id": "gomu_gomu",
+  "name": "Gomu Gomu no Mi",
+  "rarity": "Legendary",
+  "element": "rubber",
+  "awakening_level": 500,
+  "passive": {
+    "shock_immunity": true,
+    "blunt_resistance": 0.4
+  },
+  "moves": [
+    {
+      "id": "pistol",
+      "name": "Gomu Gomu no Pistol",
+      "power": 25,
+      "stamina": 10,
+      "cooldown": 1,
+      "unlock_mastery": 0
+    },
+    {
+      "id": "bazooka",
+      "name": "Gomu Gomu no Bazooka",
+      "power": 48,
+      "stamina": 18,
+      "cooldown": 3,
+      "unlock_mastery": 50
+    },
+    {
+      "id": "gatling",
+      "name": "Gomu Gomu no Gatling",
+      "power": 80,
+      "stamina": 30,
+      "cooldown": 5,
+      "unlock_mastery": 125
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hie_hie",
+  "name": "Hie Hie no Mi",
+  "rarity": "Legendary",
+  "element": "ice",
+  "awakening_level": 700,
+  "passive": {
+    "freeze_immunity": true,
+    "ice_damage": 1.25
+  },
+  "moves": [
+    {
+      "id": "ice_saber",
+      "name": "Ice Saber",
+      "power": 30,
+      "stamina": 12,
+      "cooldown": 2,
+      "unlock_mastery": 0
+    },
+    {
+      "id": "ice_age",
+      "name": "Ice Age",
+      "power": 75,
+      "stamina": 34,
+      "cooldown": 5,
+      "unlock_mastery": 150,
+      "status": "freeze",
+      "status_turns": 2,
+      "status_power": 10
+    }
+  ]
+}

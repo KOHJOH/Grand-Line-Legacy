@@ -1,0 +1,72 @@
+{
+  "mountain_bandit": {
+    "name": "Mountain Bandit",
+    "level": 1,
+    "hp": 90,
+    "attack": 11,
+    "defense": 3,
+    "speed": 8,
+    "xp": 50,
+    "beli": 100,
+    "bounty": 0
+  },
+  "marine_recruit": {
+    "name": "Marine Recruit",
+    "level": 10,
+    "hp": 180,
+    "attack": 20,
+    "defense": 10,
+    "speed": 15,
+    "xp": 140,
+    "beli": 350,
+    "bounty": 50
+  },
+  "buggy_pirate": {
+    "name": "Buggy Pirate",
+    "level": 20,
+    "hp": 320,
+    "attack": 30,
+    "defense": 15,
+    "speed": 22,
+    "xp": 300,
+    "beli": 650,
+    "bounty": 250
+  },
+  "fishman": {
+    "name": "Fishman",
+    "level": 40,
+    "hp": 850,
+    "attack": 65,
+    "defense": 34,
+    "speed": 30,
+    "xp": 1000,
+    "beli": 2500,
+    "bounty": 1000
+  },
+  "higuma": {
+    "name": "Higuma",
+    "level": 22,
+    "hp": 1600,
+    "attack": 76,
+    "defense": 24,
+    "speed": 18,
+    "xp": 750,
+    "beli": 3000,
+    "bounty": 1000,
+    "boss": true,
+    "rarity": "Epic"
+  },
+  "axe_hand_morgan": {
+    "name": "Axe-Hand Morgan",
+    "level": 35,
+    "hp": 3400,
+    "attack": 98,
+    "defense": 44,
+    "speed": 24,
+    "xp": 3000,
+    "beli": 15000,
+    "bounty": 5000,
+    "boss": true,
+    "rarity": "Legendary"
+  }
+}
