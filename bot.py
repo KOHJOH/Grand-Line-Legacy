@@ -40,15 +40,17 @@ COGS = [
     "cogs.ship_jobs",
     "cogs.alpha_admin",
     "cogs.raids",
-    "cogs.east_blue",
+    # East Blue is exposed through the prefix router to avoid Discord's 100 global slash-command cap.
+    "cogs.prefix",
 ]
 
 
 class GrandLineBot(commands.Bot):
     def __init__(self) -> None:
         intents = discord.Intents.default()
-        intents.message_content = False
-        super().__init__(command_prefix="!", intents=intents)
+        # Prefix commands need Message Content Intent enabled in the Discord Developer Portal.
+        intents.message_content = True
+        super().__init__(command_prefix="-", intents=intents)
         self.db: Database | None = None
         self.game_data: GameData | None = None
 

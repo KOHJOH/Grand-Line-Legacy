@@ -1,45 +1,32 @@
-# Grand Line: Legacy — Cumulative Sprint 16–20 Update
+# Grand Line: Legacy — Prefix Router Patch
 
-This is a larger cumulative gameplay update focused on turning East Blue into a playable progression region.
+## Why
+Discord has a hard limit of 100 global slash commands. This patch adds unlimited text prefix commands using `-` while keeping the existing slash commands online.
 
-## New cogs
-- `cogs/east_blue.py`
-- `cogs/npcs.py`
-- `cogs/skills.py`
-- `cogs/fruit_world.py`
-- `cogs/sea_routes.py`
+## Replace/upload
+- `bot.py`
+- `cogs/prefix.py`
 
-## New services
-- `services/east_blue_service.py`
-- `services/npc_service.py`
-- `services/skill_service.py`
-- `services/fruit_world_service.py`
-- `services/sea_route_service.py`
+## Important
+Message Content Intent must be enabled in the Discord Developer Portal. It is already enabled per the owner.
 
-## New data
-- `data/east_blue/islands.json`
-- `data/east_blue/npcs.json`
-- `data/skills/skills.json`
-- `data/fruits/fruit_world.json`
+## Test
+After Railway redeploys, test:
 
-## New commands
-- `/eastblue`
-- `/sailto`
-- `/checkpoints`
-- `/localnpcs`
-- `/talkto`
-- `/skills`
-- `/learnskill`
-- `/trainskill`
-- `/fruitspawns`
-- `/searchfruit`
-- `/spawnfruit`
-- `/searoutes`
-- `/beginvoyage`
-- `/voyageevent`
+```txt
+-help
+-profile
+-stats
+-questboard
+-queststart foosha_training
+-battle bandit_recruit
+-attack
+-eastblue
+-sailto orange_town
+-crew
+```
 
-## Database additions
-Adds tables for island discovery, NPC relationships, player skills, fruit spawns, voyages, and story flags. The startup schema runner will create these automatically on Railway redeploy.
-
-## Commit message
-`Cumulative update - Sprint 16 to 20 East Blue NPC skills fruit spawns sea routes`
+## Commit
+```txt
+Add prefix command router to bypass Discord slash command limit
+```
