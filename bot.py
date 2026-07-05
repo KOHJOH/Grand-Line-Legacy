@@ -32,6 +32,14 @@ COGS = [
     "cogs.achievements",
     "cogs.professions",
     "cogs.bounty",
+    "cogs.market",
+    "cogs.crafting",
+    "cogs.fishing",
+    "cogs.dungeons",
+    "cogs.world_progression",
+    "cogs.ship_jobs",
+    "cogs.alpha_admin",
+    "cogs.raids",
 ]
 
 

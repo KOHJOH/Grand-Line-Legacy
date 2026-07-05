@@ -1,0 +1,17 @@
+{
+  "default": [
+    {"item_id": "small_fish", "name": "Small Fish", "rarity": "Common", "weight": 70, "min": 1, "max": 3, "xp": 6},
+    {"item_id": "bluefin", "name": "Bluefin", "rarity": "Uncommon", "weight": 25, "min": 1, "max": 2, "xp": 12},
+    {"item_id": "sunken_coin", "name": "Sunken Coin", "rarity": "Rare", "weight": 5, "min": 1, "max": 1, "xp": 25}
+  ],
+  "Foosha Village": [
+    {"item_id": "small_fish", "name": "Small Fish", "rarity": "Common", "weight": 75, "min": 1, "max": 3, "xp": 6},
+    {"item_id": "foosha_crab", "name": "Foosha Crab", "rarity": "Uncommon", "weight": 20, "min": 1, "max": 2, "xp": 10},
+    {"item_id": "old_boot", "name": "Old Boot", "rarity": "Trash", "weight": 5, "min": 1, "max": 1, "xp": 2}
+  ],
+  "Orange Town": [
+    {"item_id": "clownfish", "name": "Clownfish", "rarity": "Common", "weight": 65, "min": 1, "max": 3, "xp": 7},
+    {"item_id": "striped_snapper", "name": "Striped Snapper", "rarity": "Uncommon", "weight": 25, "min": 1, "max": 2, "xp": 14},
+    {"item_id": "tiny_treasure_key", "name": "Tiny Treasure Key", "rarity": "Rare", "weight": 10, "min": 1, "max": 1, "xp": 30}
+  ]
+}

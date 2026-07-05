@@ -1,0 +1,9 @@
+{
+  "recipes": [
+    {"id": "bandage_pack", "name": "Bandage Pack", "ingredients": {"cloth_scrap": 3, "small_herb": 2}, "result": {"item_id": "bandage_pack", "quantity": 1}},
+    {"id": "iron_cutlass", "name": "Iron Cutlass", "ingredients": {"iron_ore": 5, "wood_plank": 2}, "result": {"item_id": "iron_cutlass", "quantity": 1}},
+    {"id": "sturdy_rod", "name": "Sturdy Fishing Rod", "ingredients": {"wood_plank": 4, "rope": 2, "iron_ore": 1}, "result": {"item_id": "sturdy_rod", "quantity": 1}},
+    {"id": "smoke_bomb", "name": "Smoke Bomb", "ingredients": {"coal_chunk": 2, "cloth_scrap": 1}, "result": {"item_id": "smoke_bomb", "quantity": 2}},
+    {"id": "sail_patch", "name": "Sail Patch", "ingredients": {"cloth_scrap": 5, "rope": 1}, "result": {"item_id": "sail_patch", "quantity": 1}}
+  ]
+}

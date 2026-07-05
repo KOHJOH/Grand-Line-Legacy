@@ -1,0 +1,7 @@
+{
+  "dungeons": [
+    {"id": "bandit_hideout", "name": "Bandit Hideout", "level_required": 1, "rooms": 3, "stamina_cost": 20, "completion_reward": {"beli": 350, "item_id": "cloth_scrap", "quantity": 3}},
+    {"id": "buggy_tent", "name": "Buggy's Side Tent", "level_required": 4, "rooms": 4, "stamina_cost": 30, "completion_reward": {"beli": 650, "item_id": "tiny_treasure_key", "quantity": 1}},
+    {"id": "marine_storehouse", "name": "Marine Storehouse", "level_required": 8, "rooms": 5, "stamina_cost": 40, "completion_reward": {"beli": 1200, "item_id": "iron_ore", "quantity": 5}}
+  ]
+}

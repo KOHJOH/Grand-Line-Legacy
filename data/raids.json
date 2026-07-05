@@ -1,0 +1,7 @@
+{
+  "raids": [
+    {"id": "arlong_park_assault", "name": "Arlong Park Assault", "level_required": 12, "min_players": 2, "max_players": 4},
+    {"id": "syrup_village_siege", "name": "Syrup Village Siege", "level_required": 8, "min_players": 2, "max_players": 4},
+    {"id": "rogue_marine_fort", "name": "Rogue Marine Fort", "level_required": 18, "min_players": 3, "max_players": 6}
+  ]
+}
