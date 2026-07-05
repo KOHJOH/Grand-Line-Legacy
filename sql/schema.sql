@@ -1,13 +1,11 @@
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
--- Core player table.
--- The ALTER statements below intentionally repair early/partial production tables.
 CREATE TABLE IF NOT EXISTS players (
     discord_id BIGINT PRIMARY KEY,
     username TEXT NOT NULL,
     level INTEGER NOT NULL DEFAULT 1,
     xp INTEGER NOT NULL DEFAULT 0,
-    beli INTEGER NOT NULL DEFAULT 0,
+    beli INTEGER NOT NULL DEFAULT 500,
     race TEXT NOT NULL DEFAULT 'Human',
     faction TEXT NOT NULL DEFAULT 'Independent',
     current_island TEXT NOT NULL DEFAULT 'Foosha Village',
@@ -23,11 +21,10 @@ CREATE TABLE IF NOT EXISTS players (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-ALTER TABLE players ADD COLUMN IF NOT EXISTS discord_id BIGINT;
 ALTER TABLE players ADD COLUMN IF NOT EXISTS username TEXT NOT NULL DEFAULT 'Unknown Pirate';
 ALTER TABLE players ADD COLUMN IF NOT EXISTS level INTEGER NOT NULL DEFAULT 1;
 ALTER TABLE players ADD COLUMN IF NOT EXISTS xp INTEGER NOT NULL DEFAULT 0;
-ALTER TABLE players ADD COLUMN IF NOT EXISTS beli INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS beli INTEGER NOT NULL DEFAULT 500;
 ALTER TABLE players ADD COLUMN IF NOT EXISTS race TEXT NOT NULL DEFAULT 'Human';
 ALTER TABLE players ADD COLUMN IF NOT EXISTS faction TEXT NOT NULL DEFAULT 'Independent';
 ALTER TABLE players ADD COLUMN IF NOT EXISTS current_island TEXT NOT NULL DEFAULT 'Foosha Village';
@@ -41,8 +38,6 @@ ALTER TABLE players ADD COLUMN IF NOT EXISTS crew_name TEXT NOT NULL DEFAULT 'No
 ALTER TABLE players ADD COLUMN IF NOT EXISTS devil_fruit TEXT NOT NULL DEFAULT 'None';
 ALTER TABLE players ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
 ALTER TABLE players ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
-
-CREATE UNIQUE INDEX IF NOT EXISTS idx_players_discord_id_unique ON players(discord_id);
 
 CREATE TABLE IF NOT EXISTS player_inventory (
     id BIGSERIAL PRIMARY KEY,
@@ -112,6 +107,21 @@ CREATE TABLE IF NOT EXISTS combat_sessions (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 CREATE INDEX IF NOT EXISTS idx_combat_sessions_active ON combat_sessions(discord_id, status);
+
+CREATE TABLE IF NOT EXISTS npc_battle_sessions (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    enemy_id TEXT NOT NULL,
+    enemy_hp INTEGER NOT NULL,
+    enemy_max_hp INTEGER NOT NULL,
+    turn INTEGER NOT NULL DEFAULT 1,
+    status TEXT NOT NULL DEFAULT 'active',
+    state JSONB NOT NULL DEFAULT '{}'::jsonb,
+    started_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    ended_at TIMESTAMPTZ,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+CREATE INDEX IF NOT EXISTS idx_npc_battle_sessions_active ON npc_battle_sessions(discord_id, status, started_at DESC);
 
 CREATE TABLE IF NOT EXISTS fruit_registry (
     fruit_id TEXT PRIMARY KEY,

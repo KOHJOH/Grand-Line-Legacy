@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
 
 import asyncpg
 
@@ -18,38 +17,36 @@ class Database:
         if self.pool:
             await self.pool.close()
 
-    async def fetchrow(self, query: str, *args: Any):
+    async def initialize_schema(self, schema_path: str = "sql/schema.sql") -> None:
+        if not self.pool:
+            raise RuntimeError("Database pool not initialized")
+        path = Path(schema_path)
+        if not path.exists():
+            raise FileNotFoundError(f"Missing database schema file: {schema_path}")
+        sql = path.read_text(encoding="utf-8")
+        async with self.pool.acquire() as conn:
+            await conn.execute(sql)
+
+    async def fetchrow(self, query: str, *args):
         if not self.pool:
             raise RuntimeError("Database pool not initialized")
         async with self.pool.acquire() as conn:
             return await conn.fetchrow(query, *args)
 
-    async def fetch(self, query: str, *args: Any):
+    async def fetch(self, query: str, *args):
         if not self.pool:
             raise RuntimeError("Database pool not initialized")
         async with self.pool.acquire() as conn:
             return await conn.fetch(query, *args)
 
-    async def execute(self, query: str, *args: Any):
+    async def execute(self, query: str, *args):
         if not self.pool:
             raise RuntimeError("Database pool not initialized")
         async with self.pool.acquire() as conn:
             return await conn.execute(query, *args)
 
-    async def execute_script(self, script: str) -> None:
-        """Run a multi-statement SQL script against the database."""
+    async def execute_many(self, query: str, args_iterable):
         if not self.pool:
             raise RuntimeError("Database pool not initialized")
         async with self.pool.acquire() as conn:
-            await conn.execute(script)
-
-    async def run_schema_file(self, path: str = "sql/schema.sql") -> None:
-        """Create/update all required tables on startup.
-
-        This is intentionally idempotent because schema.sql uses CREATE TABLE IF NOT EXISTS
-        and ALTER TABLE ... IF NOT EXISTS statements.
-        """
-        schema_path = Path(path)
-        if not schema_path.exists():
-            raise FileNotFoundError(f"Database schema file not found: {schema_path.resolve()}")
-        await self.execute_script(schema_path.read_text(encoding="utf-8"))
+            return await conn.executemany(query, args_iterable)

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bandit_recruit",
+    "name": "Bandit Recruit",
+    "level": 1,
+    "hp": 35,
+    "attack": 7,
+    "defense": 2,
+    "islands": ["Foosha Village", "Mt. Colubo"],
+    "rewards": {"xp": 35, "beli": 25, "items": {"bread": 1}}
+  },
+  {
+    "id": "dock_thief",
+    "name": "Dock Thief",
+    "level": 2,
+    "hp": 45,
+    "attack": 9,
+    "defense": 3,
+    "islands": ["Foosha Village", "Shells Town", "Orange Town"],
+    "rewards": {"xp": 45, "beli": 40, "items": {"water": 1}}
+  },
+  {
+    "id": "wild_boar",
+    "name": "Wild Boar",
+    "level": 3,
+    "hp": 60,
+    "attack": 11,
+    "defense": 4,
+    "islands": ["Foosha Village", "Mt. Colubo", "Dawn Island Coast"],
+    "rewards": {"xp": 55, "beli": 15, "items": {"boar_meat": 1}}
+  },
+  {
+    "id": "pirate_grunt",
+    "name": "Pirate Grunt",
+    "level": 4,
+    "hp": 75,
+    "attack": 14,
+    "defense": 5,
+    "islands": ["Orange Town", "Syrup Village", "Baratie"],
+    "rewards": {"xp": 75, "beli": 80, "items": {"iron_scrap": 1}}
+  },
+  {
+    "id": "marine_rookie",
+    "name": "Marine Rookie",
+    "level": 5,
+    "hp": 90,
+    "attack": 16,
+    "defense": 7,
+    "islands": ["Shells Town", "Loguetown"],
+    "rewards": {"xp": 90, "beli": 70, "items": {"basic_medkit": 1}}
+  }
+]

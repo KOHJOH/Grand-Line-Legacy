@@ -1,8 +1,52 @@
 [
-  {"id":"fv_lost_net","name":"Lost Fishing Net","island_id":"foosha_village","giver":"Fisherman Kent","objective":"Gather 1 lost_net near the cliffs","type":"gather","reward_xp":50,"reward_beli":300},
-  {"id":"fv_wolves","name":"Clear the Wolves","island_id":"foosha_village","giver":"Mayor Woop Slap","objective":"Defeat 5 wolves near the mountain trail","type":"kill","reward_xp":120,"reward_beli":500},
-  {"id":"fv_first_voyage","name":"First Voyage Preparation","island_id":"foosha_village","giver":"Boat Builder Oscar","objective":"Bring supplies and redeem your boat voucher","type":"delivery","reward_xp":150,"reward_beli":0},
-  {"id":"st_marine_supplies","name":"Marine Supply Run","island_id":"shells_town","giver":"Quartermaster Lewis","objective":"Deliver supplies from the harbor to the base","type":"delivery","reward_xp":100,"reward_beli":600},
-  {"id":"ot_save_chouchou","name":"Save Chouchou","island_id":"orange_town","giver":"Boodle","objective":"Defeat the pirate thieves near the pet food shop","type":"kill","reward_xp":160,"reward_beli":700},
-  {"id":"sv_protect_kaya","name":"Protect Kaya","island_id":"syrup_village","giver":"Merry","objective":"Investigate Black Cat activity around the mansion","type":"explore","reward_xp":200,"reward_beli":800}
+  {
+    "id": "foosha_training",
+    "name": "First Fight",
+    "description": "Makino says the village has been bothered by bandits near the road. Prove you can handle yourself.",
+    "islands": ["Foosha Village"],
+    "objective": {"type": "kill", "target": "bandit_recruit", "amount": 1},
+    "rewards": {"xp": 75, "beli": 100, "items": {"bread": 2}},
+    "start_dialogue": "Makino smiles. 'Start small. Defeat one bandit and come back safe.'",
+    "complete_dialogue": "Makino nods proudly. 'You handled yourself well. Maybe you really are ready for the sea.'"
+  },
+  {
+    "id": "dock_cleanup",
+    "name": "Dock Cleanup",
+    "description": "The harbor master wants thieves cleared away from the docks.",
+    "islands": ["Foosha Village", "Shells Town", "Orange Town"],
+    "objective": {"type": "kill", "target": "dock_thief", "amount": 2},
+    "rewards": {"xp": 120, "beli": 160, "items": {"water": 2}},
+    "start_dialogue": "The harbor master points toward the pier. 'Two thieves. Handle them and I'll pay you.'",
+    "complete_dialogue": "'Clean work. The docks are safer now.'"
+  },
+  {
+    "id": "boar_problem",
+    "name": "Boar Problem",
+    "description": "Wild boars have been charging travelers outside the village.",
+    "islands": ["Foosha Village", "Mt. Colubo", "Dawn Island Coast"],
+    "objective": {"type": "kill", "target": "wild_boar", "amount": 2},
+    "rewards": {"xp": 130, "beli": 90, "items": {"boar_meat": 2}},
+    "start_dialogue": "A villager sighs. 'Those boars are tearing up the road again. Could you thin them out?'",
+    "complete_dialogue": "'Finally, people can travel without getting launched into a bush.'"
+  },
+  {
+    "id": "pirate_pressure",
+    "name": "Pirate Pressure",
+    "description": "Local pirates are testing the town's defenses. Push them back.",
+    "islands": ["Orange Town", "Syrup Village", "Baratie"],
+    "objective": {"type": "kill", "target": "pirate_grunt", "amount": 3},
+    "rewards": {"xp": 240, "beli": 300, "items": {"iron_scrap": 2}},
+    "start_dialogue": "A worried guard lowers his voice. 'They're getting bold. Take out three of them.'",
+    "complete_dialogue": "'That should make them think twice before walking into our town again.'"
+  },
+  {
+    "id": "marine_drill",
+    "name": "Marine Drill",
+    "description": "Spar with rookie Marines to sharpen your fundamentals.",
+    "islands": ["Shells Town", "Loguetown"],
+    "objective": {"type": "kill", "target": "marine_rookie", "amount": 2},
+    "rewards": {"xp": 220, "beli": 180, "items": {"basic_medkit": 1}},
+    "start_dialogue": "The drill instructor grins. 'Let's see if you're more than talk.'",
+    "complete_dialogue": "'Not bad. Your form still needs work, but you've got grit.'"
+  }
 ]

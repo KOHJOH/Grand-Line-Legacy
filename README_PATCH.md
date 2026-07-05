@@ -1,19 +1,44 @@
-# Grand Line: Legacy Profile/Schema Patch
+# Sprint 9 Real Gameplay Patch
 
-Replace these files in your GitHub repo:
+Adds real gameplay code for:
 
-- `cogs/profile.py`
+- `/stats`
+- `/questboard`
+- `/quests`
+- `/queststart`
+- `/questturnin`
+- `/questabandon`
+- `/battle`
+- `/battleaction`
+- `/rest`
+
+## Replace/upload these paths
+
+- `bot.py`
+- `core/database.py`
 - `sql/schema.sql`
+- `services/stat_service.py`
+- `services/reward_service.py`
+- `services/quest_service.py`
+- `services/battle_service.py`
+- `cogs/stats.py`
+- `cogs/quests.py`
+- `cogs/battle.py`
+- `data/enemies.json`
+- `data/quests.json`
 
-Commit message:
+## Commit message
 
-`Fix profile missing race field and repair player schema`
+`Sprint 9 - Stats Quests and NPC Battle Engine`
 
-Railway should redeploy automatically. The startup schema initializer will add missing player columns like `race`, `faction`, `title`, `bounty`, `crew_name`, and `devil_fruit`.
+After Railway redeploys, test in this order:
 
-After redeploy, test:
-
-1. `/start`
-2. `/profile`
-
-If `/profile` errors again, send the new Railway logs.
+1. `/profile`
+2. `/stats`
+3. `/questboard`
+4. `/queststart quest_id:foosha_training`
+5. `/battle enemy_id:bandit_recruit`
+6. `/battleaction action:attack`
+7. Repeat `/battleaction action:attack` until the enemy dies.
+8. `/quests`
+9. `/questturnin quest_id:foosha_training`
