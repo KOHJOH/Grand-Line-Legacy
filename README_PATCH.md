@@ -1,44 +1,30 @@
-# Sprint 9 Real Gameplay Patch
+# Sprint 9 Command Conflict Patch
 
-Adds real gameplay code for:
+Fixes Railway startup crash:
 
-- `/stats`
-- `/questboard`
-- `/quests`
-- `/queststart`
-- `/questturnin`
-- `/questabandon`
-- `/battle`
-- `/battleaction`
-- `/rest`
+- `CommandAlreadyRegistered: Command 'questboard' already registered.`
+- Prevents the next likely duplicate `/rest` conflict.
 
-## Replace/upload these paths
+## Replace these files
 
-- `bot.py`
-- `core/database.py`
-- `sql/schema.sql`
-- `services/stat_service.py`
-- `services/reward_service.py`
-- `services/quest_service.py`
-- `services/battle_service.py`
-- `cogs/stats.py`
-- `cogs/quests.py`
+- `cogs/world.py`
 - `cogs/battle.py`
-- `data/enemies.json`
-- `data/quests.json`
+
+## What changed
+
+- Removed the old `/questboard` command from `cogs/world.py`.
+  - The new quest system in `cogs/quests.py` owns `/questboard` now.
+- Removed duplicate `/rest` from `cogs/battle.py`.
+  - The existing boss combat cog already owns `/rest`.
 
 ## Commit message
 
-`Sprint 9 - Stats Quests and NPC Battle Engine`
+`Fix duplicate questboard and rest command registration`
 
-After Railway redeploys, test in this order:
+After Railway redeploys, test:
 
-1. `/profile`
-2. `/stats`
-3. `/questboard`
-4. `/queststart quest_id:foosha_training`
-5. `/battle enemy_id:bandit_recruit`
-6. `/battleaction action:attack`
-7. Repeat `/battleaction action:attack` until the enemy dies.
-8. `/quests`
-9. `/questturnin quest_id:foosha_training`
+1. `/stats`
+2. `/questboard`
+3. `/queststart quest_id:foosha_training`
+4. `/battle enemy_id:bandit_recruit`
+5. `/battleaction action:attack`

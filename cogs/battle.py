@@ -37,13 +37,6 @@ class BattleCog(commands.Cog):
         embed = discord.Embed(title="⚔️ Battle", description=message, color=color)
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
-    @app_commands.command(name="rest", description="Recover your HP and stamina outside battle.")
-    async def rest(self, interaction: discord.Interaction):
-        if not await PlayerService(self.bot.db).get_player(interaction.user.id):
-            await interaction.response.send_message("Use `/start` first.", ephemeral=True)
-            return
-        message = await BattleService(self.bot.db, self.bot.game_data).rest(interaction.user.id)
-        await interaction.response.send_message("✅ " + message, ephemeral=True)
 
 
 async def setup(bot: commands.Bot):
