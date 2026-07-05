@@ -1,0 +1,10 @@
+{
+  "foosha_001":{"title":"Bandits at the Windmill","island":"foosha_village","giver":"makino","objective":"Defeat 2 Mountain Bandits","target":"mountain_bandit","required":2,"xp":80,"beli":180,"dialogue":"The village has been restless. Push those bandits back before someone gets hurt."},
+  "foosha_002":{"title":"Mayor's Errand","island":"foosha_village","giver":"woop_slap","objective":"Train once and recover","target":"training","required":1,"xp":50,"beli":90,"dialogue":"A future sailor needs discipline before adventure."},
+  "shells_001":{"title":"Corrupt Justice","island":"shells_town","giver":"rika","objective":"Defeat 3 Marine Bullies","target":"marine_bully","required":3,"xp":220,"beli":350,"dialogue":"The Marines here aren't protecting anyone. Please help us."},
+  "orange_001":{"title":"Dog's Treasure","island":"orange_town","giver":"chouchou","objective":"Defeat 3 Buggy Pirates","target":"buggy_pirate","required":3,"xp":360,"beli":520,"dialogue":"Chouchou guards this place alone. Stand with him."},
+  "syrup_001":{"title":"Lies in the Hills","island":"syrup_village","giver":"usopp_storyteller","objective":"Defeat 3 Black Cat Scouts","target":"black_cat_scout","required":3,"xp":560,"beli":820,"dialogue":"I swear pirates are coming! This time it isn't a lie!"},
+  "baratie_001":{"title":"Dinner Rush Defense","island":"baratie","giver":"zeff","objective":"Defeat 3 Krieg Pirates","target":"krieg_pirate","required":3,"xp":800,"beli":1200,"dialogue":"No one wrecks my restaurant and eats for free."},
+  "arlong_001":{"title":"Cocoyasi Chains","island":"arlong_park","giver":"genzo","objective":"Defeat 4 Fish-Man Enforcers","target":"fishman_enforcer","required":4,"xp":1350,"beli":2200,"dialogue":"We've lived under fear long enough."},
+  "loguetown_001":{"title":"Gateway Trial","island":"loguetown","giver":"tashigi_swords","objective":"Defeat 3 Rogue Swordsmen","target":"rogue_swordsman","required":3,"xp":2100,"beli":3500,"dialogue":"Before the Grand Line, prove you can survive Loguetown."}
+}

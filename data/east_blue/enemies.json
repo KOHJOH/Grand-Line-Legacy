@@ -1,0 +1,16 @@
+{
+  "mountain_bandit":{"name":"Mountain Bandit","level":1,"hp":45,"attack":8,"defense":2,"xp":25,"beli":60,"island":"foosha_village"},
+  "bandit_leader":{"name":"Bandit Leader","level":3,"hp":90,"attack":14,"defense":4,"xp":75,"beli":140,"island":"foosha_village"},
+  "marine_bully":{"name":"Marine Bully","level":4,"hp":80,"attack":13,"defense":5,"xp":70,"beli":120,"island":"shells_town"},
+  "axe_captain_guard":{"name":"Axe Captain Guard","level":6,"hp":130,"attack":19,"defense":7,"xp":130,"beli":230,"island":"shells_town"},
+  "buggy_pirate":{"name":"Buggy Pirate","level":7,"hp":120,"attack":21,"defense":7,"xp":145,"beli":260,"island":"orange_town"},
+  "cabaji_rider":{"name":"Cabaji Rider","level":9,"hp":180,"attack":28,"defense":10,"xp":230,"beli":390,"island":"orange_town"},
+  "black_cat_scout":{"name":"Black Cat Scout","level":10,"hp":170,"attack":30,"defense":10,"xp":250,"beli":420,"island":"syrup_village"},
+  "kuro_shadow":{"name":"Kuro's Shadow","level":13,"hp":260,"attack":42,"defense":15,"xp":420,"beli":700,"island":"syrup_village"},
+  "krieg_pirate":{"name":"Krieg Pirate","level":14,"hp":250,"attack":44,"defense":16,"xp":450,"beli":760,"island":"baratie"},
+  "pearl_shield":{"name":"Pearl Shield Fighter","level":16,"hp":340,"attack":52,"defense":24,"xp":650,"beli":980,"island":"baratie"},
+  "fishman_enforcer":{"name":"Fish-Man Enforcer","level":19,"hp":390,"attack":66,"defense":28,"xp":900,"beli":1400,"island":"arlong_park"},
+  "arlong_lieutenant":{"name":"Arlong Lieutenant","level":22,"hp":520,"attack":82,"defense":34,"xp":1400,"beli":2200,"island":"arlong_park"},
+  "rogue_swordsman":{"name":"Rogue Swordsman","level":24,"hp":520,"attack":88,"defense":38,"xp":1700,"beli":2600,"island":"loguetown"},
+  "smoker_cadet":{"name":"Smoker's Cadet","level":27,"hp":720,"attack":105,"defense":48,"xp":2400,"beli":3400,"island":"loguetown"}
+}

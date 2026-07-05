@@ -1,32 +1,20 @@
-# Grand Line: Legacy — Prefix Router Patch
+# Grand Line Legacy — Milestone A Full East Blue Build
 
-## Why
-Discord has a hard limit of 100 global slash commands. This patch adds unlimited text prefix commands using `-` while keeping the existing slash commands online.
+Upload/replace these folders into your repo, commit, and redeploy Railway.
 
-## Replace/upload
-- `bot.py`
-- `cogs/prefix.py`
+Commit message:
+Milestone A - Full East Blue playable prefix MMO loop
 
-## Important
-Message Content Intent must be enabled in the Discord Developer Portal. It is already enabled per the owner.
-
-## Test
-After Railway redeploys, test:
-
-```txt
+Main test commands:
 -help
--profile
--stats
--questboard
--queststart foosha_training
--battle bandit_recruit
--attack
 -eastblue
--sailto orange_town
--crew
-```
-
-## Commit
-```txt
-Add prefix command router to bypass Discord slash command limit
-```
+-islands
+-travel shells_town
+-npcs
+-talk makino
+-questboard
+-queststart foosha_001
+-battle mountain_bandit
+-attack
+-shop
+-buy wooden_sword

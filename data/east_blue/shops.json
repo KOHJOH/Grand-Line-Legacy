@@ -1,0 +1,9 @@
+{
+ "foosha_general":[{"id":"wooden_sword","name":"Wooden Sword","price":120},{"id":"small_potion","name":"Small Potion","price":50}],
+ "shells_armory":[{"id":"marine_cutlass","name":"Marine Cutlass","price":450},{"id":"leather_vest","name":"Leather Vest","price":350}],
+ "orange_supply":[{"id":"circus_dagger","name":"Circus Dagger","price":800},{"id":"medium_potion","name":"Medium Potion","price":160}],
+ "syrup_tools":[{"id":"slingshot","name":"Slingshot","price":1100},{"id":"smoke_bomb","name":"Smoke Bomb","price":250}],
+ "baratie_kitchen":[{"id":"chef_kicks","name":"Chef Kicks","price":1800},{"id":"stamina_meal","name":"Stamina Meal","price":300}],
+ "cocoyasi_supply":[{"id":"fishman_armor","name":"Fish-Man Armor","price":3200},{"id":"large_potion","name":"Large Potion","price":450}],
+ "loguetown_market":[{"id":"executioners_blade","name":"Executioner's Blade","price":6000},{"id":"grandline_logpose","name":"Grand Line Log Pose","price":10000}]
+}

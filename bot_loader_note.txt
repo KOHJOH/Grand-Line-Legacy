@@ -1,0 +1,2 @@
+Add cogs.east_blue_prefix to your extension loader if it is not already present.
+Because it uses on_message prefix routing, it does NOT add slash commands and avoids Discord's 100 slash command cap.
