@@ -1,0 +1,7 @@
+{
+  "bandit_bruiser": {"name":"Bandit Bruiser","level":4,"hp":120,"attack":18,"defense":5,"xp":45,"beli":90,"skills":["club_smash","taunt"]},
+  "marine_cadet": {"name":"Marine Cadet","level":6,"hp":150,"attack":22,"defense":8,"xp":65,"beli":120,"skills":["rifle_butt","guard"]},
+  "buggy_pirate": {"name":"Buggy Pirate","level":9,"hp":210,"attack":30,"defense":10,"xp":105,"beli":180,"skills":["knife_throw"]},
+  "arlong_goon": {"name":"Arlong Pirate Grunt","level":14,"hp":330,"attack":44,"defense":18,"xp":210,"beli":320,"skills":["fishman_punch"]},
+  "axe_hand_morgan": {"name":"Axe-Hand Morgan","level":18,"hp":600,"attack":58,"defense":25,"xp":600,"beli":1200,"boss":true,"skills":["axe_cleave","iron_will"]}
+}

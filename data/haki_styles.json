@@ -1,0 +1,5 @@
+{
+  "observation": {"display":"Observation Haki","max_level":100,"bonuses":{"dodge_per_level":0.06,"crit_per_level":0.03}},
+  "armament": {"display":"Armament Haki","max_level":100,"bonuses":{"attack_per_level":0.8,"defense_per_level":0.5}},
+  "conqueror": {"display":"Conqueror's Haki","max_level":100,"unlock_level":35,"bonuses":{"boss_damage_per_level":0.5}}
+}
