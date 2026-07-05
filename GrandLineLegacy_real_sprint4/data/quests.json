@@ -1,0 +1,8 @@
+[
+  {"id":"fv_lost_net","name":"Lost Fishing Net","island_id":"foosha_village","giver":"Fisherman Kent","objective":"Gather 1 lost_net near the cliffs","type":"gather","reward_xp":50,"reward_beli":300},
+  {"id":"fv_wolves","name":"Clear the Wolves","island_id":"foosha_village","giver":"Mayor Woop Slap","objective":"Defeat 5 wolves near the mountain trail","type":"kill","reward_xp":120,"reward_beli":500},
+  {"id":"fv_first_voyage","name":"First Voyage Preparation","island_id":"foosha_village","giver":"Boat Builder Oscar","objective":"Bring supplies and redeem your boat voucher","type":"delivery","reward_xp":150,"reward_beli":0},
+  {"id":"st_marine_supplies","name":"Marine Supply Run","island_id":"shells_town","giver":"Quartermaster Lewis","objective":"Deliver supplies from the harbor to the base","type":"delivery","reward_xp":100,"reward_beli":600},
+  {"id":"ot_save_chouchou","name":"Save Chouchou","island_id":"orange_town","giver":"Boodle","objective":"Defeat the pirate thieves near the pet food shop","type":"kill","reward_xp":160,"reward_beli":700},
+  {"id":"sv_protect_kaya","name":"Protect Kaya","island_id":"syrup_village","giver":"Merry","objective":"Investigate Black Cat activity around the mansion","type":"explore","reward_xp":200,"reward_beli":800}
+]

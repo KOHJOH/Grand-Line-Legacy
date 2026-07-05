@@ -1,0 +1,4 @@
+{
+  "starter_chest": {"beli": [20, 80], "xp": [0, 0], "drops": [{"item_id":"bread","chance":0.70,"qty":[1,3]}, {"item_id":"water","chance":0.70,"qty":[1,3]}, {"item_id":"rusted_ring","chance":0.08,"qty":[1,1]}]},
+  "resource_crate": {"beli": [0, 30], "xp": [0, 0], "drops": [{"item_id":"oak_wood","chance":0.90,"qty":[2,6]}, {"item_id":"iron_ore","chance":0.55,"qty":[1,4]}]}
+}
