@@ -1,39 +1,14 @@
-# Milestone B - Real Systems Patch
+# Milestone B KeyError Fix
 
-Adds prefix-first Devil Fruit, Haki, combat expansion, and owner tools.
+Railway failed loading `cogs.milestone_b` because `core/fruits/registry.py` required every JSON file in `data/fruits` to contain an `id`.
 
-## Replace/Add files
-- `cogs/milestone_b.py`
-- `services/milestone_b_service.py`
-- `data/devil_fruits.json`
-- `data/haki_styles.json`
-- `data/milestone_b_enemies.json`
-- `sql/milestone_b_schema.sql`
+This patch updates the registry so:
+- if a fruit JSON is missing `id`, it uses the filename as the fruit id
+- malformed move objects are skipped instead of crashing the whole cog
+- missing optional fruit fields get safe defaults
 
-## Required bot.py change
-Add this cog to your extension list:
+Replace:
+- `core/fruits/registry.py`
 
-```py
-"cogs.milestone_b",
-```
-
-## Test commands
-```txt
--fruitdex
--fruitfind
--fruitstorage
--eatfruit gomu_gomu
--fruitmoves
--haki
--hakitrain observation
--hakitrain armament
--battle2 bandit_bruiser
--move pistol
--owner help
--owner givebeli @user 1000
--owner givefruit @user mera_mera
--owner setlevel @user 10
--owner spawnboss axe_hand_morgan
-```
-
-Owner commands require `OWNER_ID` in Railway variables.
+Commit:
+`Fix Milestone B fruit registry missing id crash`
