@@ -14,6 +14,10 @@ class GameData:
     items: list[dict[str, Any]]
     fruits: list[dict[str, Any]]
     haki: list[dict[str, Any]]
+    npcs: list[dict[str, Any]] = field(default_factory=list)
+    shops: list[dict[str, Any]] = field(default_factory=list)
+    treasures: list[dict[str, Any]] = field(default_factory=list)
+    island_details: list[dict[str, Any]] = field(default_factory=list)
     loot_tables: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     @classmethod
@@ -31,6 +35,10 @@ class GameData:
             items=_load_json_list(root / "items.json"),
             fruits=_load_json_list(root / "fruits.json"),
             haki=_load_json_list(root / "haki.json"),
+            npcs=_load_json_list_optional(root / "npcs.json"),
+            shops=_load_json_list_optional(root / "shops.json"),
+            treasures=_load_json_list_optional(root / "treasures.json"),
+            island_details=_load_json_list_optional(root / "island_details.json"),
             loot_tables=loot_tables,
         )
 
@@ -45,3 +53,9 @@ def _load_json_list(path: Path) -> list[dict[str, Any]]:
     if not isinstance(data, list):
         raise ValueError(f"{path} must contain a JSON list")
     return data
+
+
+def _load_json_list_optional(path: Path) -> list[dict[str, Any]]:
+    if not path.exists():
+        return []
+    return _load_json_list(path)

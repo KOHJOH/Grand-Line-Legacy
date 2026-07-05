@@ -1,28 +1,333 @@
 [
-  {"id":"bread","name":"Bread","type":"consumable","rarity":"common","description":"Restores 15 stamina.","stackable":true,"effects":{"stamina":15},"sell_value":10},
-  {"id":"water","name":"Water","type":"consumable","rarity":"common","description":"Restores 10 stamina and 5 HP.","stackable":true,"effects":{"stamina":10,"hp":5},"sell_value":8},
-  {"id":"bandage","name":"Bandage","type":"consumable","rarity":"common","description":"Restores 25 HP.","stackable":true,"effects":{"hp":25},"sell_value":15},
-  {"id":"meat_skewer","name":"Meat Skewer","type":"consumable","rarity":"uncommon","description":"Restores 35 HP and 20 stamina.","stackable":true,"effects":{"hp":35,"stamina":20},"sell_value":40},
-
-  {"id":"wooden_sword","name":"Wooden Sword","type":"weapon","rarity":"common","description":"A simple starter weapon.","stackable":false,"stats":{"attack":4},"durability":50,"sell_value":25},
-  {"id":"iron_cutlass","name":"Iron Cutlass","type":"weapon","rarity":"uncommon","description":"A reliable pirate blade.","stackable":false,"stats":{"attack":12},"durability":85,"sell_value":180},
-  {"id":"marine_jitte","name":"Marine Jitte","type":"weapon","rarity":"rare","description":"A Marine weapon useful against reckless pirates.","stackable":false,"stats":{"attack":18,"defense":3},"durability":110,"sell_value":500},
-  {"id":"shark_tooth_spear","name":"Shark Tooth Spear","type":"weapon","rarity":"rare","description":"A vicious spear carved from sea-beast remains.","stackable":false,"stats":{"attack":22},"durability":95,"sell_value":650},
-
-  {"id":"cloth_shirt","name":"Cloth Shirt","type":"armor","rarity":"common","description":"Plain beginner clothing.","stackable":false,"stats":{"defense":2},"durability":45,"sell_value":15},
-  {"id":"leather_vest","name":"Leather Vest","type":"armor","rarity":"uncommon","description":"Light protection for early voyages.","stackable":false,"stats":{"defense":7,"max_hp":10},"durability":75,"sell_value":120},
-  {"id":"marine_cape","name":"Marine Cape","type":"armor","rarity":"rare","description":"A symbol of justice and discipline.","stackable":false,"stats":{"defense":12,"max_hp":20},"durability":100,"sell_value":400},
-
-  {"id":"rusted_ring","name":"Rusted Ring","type":"accessory","rarity":"common","description":"An old ring from a forgotten sailor.","stackable":false,"stats":{"max_stamina":5},"sell_value":30},
-  {"id":"lucky_coin","name":"Lucky Coin","type":"accessory","rarity":"uncommon","description":"A coin believed to help treasure hunters.","stackable":false,"stats":{"luck":2},"sell_value":125},
-
-  {"id":"starter_map","name":"East Blue Starter Map","type":"tool","rarity":"common","description":"Shows the earliest East Blue routes.","stackable":false,"sell_value":5},
-  {"id":"basic_fishing_rod","name":"Basic Fishing Rod","type":"tool","rarity":"common","description":"Lets you fish in beginner waters.","stackable":false,"stats":{"fishing":1},"durability":60,"sell_value":75},
-  {"id":"boat_voucher","name":"Wooden Boat Voucher","type":"quest","rarity":"common","description":"Redeem at a dock for your first boat.","stackable":false,"sell_value":0},
-
-  {"id":"iron_ore","name":"Iron Ore","type":"resource","rarity":"common","description":"Used by blacksmiths.","stackable":true,"sell_value":12},
-  {"id":"oak_wood","name":"Oak Wood","type":"resource","rarity":"common","description":"Used by shipwrights and carpenters.","stackable":true,"sell_value":10},
-  {"id":"coral_fragment","name":"Coral Fragment","type":"resource","rarity":"uncommon","description":"A crafting material from reef zones.","stackable":true,"sell_value":35},
-  {"id":"buggy_ball_recipe","name":"Buggy Ball Recipe","type":"blueprint","rarity":"rare","description":"Unlocks explosive ammo crafting later.","stackable":false,"sell_value":300},
-  {"id":"higuma_cloak","name":"Higuma's Bear Cloak","type":"cosmetic","rarity":"rare","description":"A rugged cloak taken from a mountain bandit legend.","stackable":false,"sell_value":250}
+  {
+    "id": "bread",
+    "name": "Bread",
+    "type": "consumable",
+    "rarity": "common",
+    "description": "Restores 15 stamina.",
+    "stackable": true,
+    "effects": {
+      "stamina": 15
+    },
+    "sell_value": 10
+  },
+  {
+    "id": "water",
+    "name": "Water",
+    "type": "consumable",
+    "rarity": "common",
+    "description": "Restores 10 stamina and 5 HP.",
+    "stackable": true,
+    "effects": {
+      "stamina": 10,
+      "hp": 5
+    },
+    "sell_value": 8
+  },
+  {
+    "id": "bandage",
+    "name": "Bandage",
+    "type": "consumable",
+    "rarity": "common",
+    "description": "Restores 25 HP.",
+    "stackable": true,
+    "effects": {
+      "hp": 25
+    },
+    "sell_value": 15
+  },
+  {
+    "id": "meat_skewer",
+    "name": "Meat Skewer",
+    "type": "consumable",
+    "rarity": "uncommon",
+    "description": "Restores 35 HP and 20 stamina.",
+    "stackable": true,
+    "effects": {
+      "hp": 35,
+      "stamina": 20
+    },
+    "sell_value": 40
+  },
+  {
+    "id": "wooden_sword",
+    "name": "Wooden Sword",
+    "type": "weapon",
+    "rarity": "common",
+    "description": "A simple starter weapon.",
+    "stackable": false,
+    "stats": {
+      "attack": 4
+    },
+    "durability": 50,
+    "sell_value": 25
+  },
+  {
+    "id": "iron_cutlass",
+    "name": "Iron Cutlass",
+    "type": "weapon",
+    "rarity": "uncommon",
+    "description": "A reliable pirate blade.",
+    "stackable": false,
+    "stats": {
+      "attack": 12
+    },
+    "durability": 85,
+    "sell_value": 180
+  },
+  {
+    "id": "marine_jitte",
+    "name": "Marine Jitte",
+    "type": "weapon",
+    "rarity": "rare",
+    "description": "A Marine weapon useful against reckless pirates.",
+    "stackable": false,
+    "stats": {
+      "attack": 18,
+      "defense": 3
+    },
+    "durability": 110,
+    "sell_value": 500
+  },
+  {
+    "id": "shark_tooth_spear",
+    "name": "Shark Tooth Spear",
+    "type": "weapon",
+    "rarity": "rare",
+    "description": "A vicious spear carved from sea-beast remains.",
+    "stackable": false,
+    "stats": {
+      "attack": 22
+    },
+    "durability": 95,
+    "sell_value": 650
+  },
+  {
+    "id": "cloth_shirt",
+    "name": "Cloth Shirt",
+    "type": "armor",
+    "rarity": "common",
+    "description": "Plain beginner clothing.",
+    "stackable": false,
+    "stats": {
+      "defense": 2
+    },
+    "durability": 45,
+    "sell_value": 15
+  },
+  {
+    "id": "leather_vest",
+    "name": "Leather Vest",
+    "type": "armor",
+    "rarity": "uncommon",
+    "description": "Light protection for early voyages.",
+    "stackable": false,
+    "stats": {
+      "defense": 7,
+      "max_hp": 10
+    },
+    "durability": 75,
+    "sell_value": 120
+  },
+  {
+    "id": "marine_cape",
+    "name": "Marine Cape",
+    "type": "armor",
+    "rarity": "rare",
+    "description": "A symbol of justice and discipline.",
+    "stackable": false,
+    "stats": {
+      "defense": 12,
+      "max_hp": 20
+    },
+    "durability": 100,
+    "sell_value": 400
+  },
+  {
+    "id": "rusted_ring",
+    "name": "Rusted Ring",
+    "type": "accessory",
+    "rarity": "common",
+    "description": "An old ring from a forgotten sailor.",
+    "stackable": false,
+    "stats": {
+      "max_stamina": 5
+    },
+    "sell_value": 30
+  },
+  {
+    "id": "lucky_coin",
+    "name": "Lucky Coin",
+    "type": "accessory",
+    "rarity": "uncommon",
+    "description": "A coin believed to help treasure hunters.",
+    "stackable": false,
+    "stats": {
+      "luck": 2
+    },
+    "sell_value": 125
+  },
+  {
+    "id": "starter_map",
+    "name": "East Blue Starter Map",
+    "type": "tool",
+    "rarity": "common",
+    "description": "Shows the earliest East Blue routes.",
+    "stackable": false,
+    "sell_value": 5
+  },
+  {
+    "id": "basic_fishing_rod",
+    "name": "Basic Fishing Rod",
+    "type": "tool",
+    "rarity": "common",
+    "description": "Lets you fish in beginner waters.",
+    "stackable": false,
+    "stats": {
+      "fishing": 1
+    },
+    "durability": 60,
+    "sell_value": 75
+  },
+  {
+    "id": "boat_voucher",
+    "name": "Wooden Boat Voucher",
+    "type": "quest",
+    "rarity": "common",
+    "description": "Redeem at a dock for your first boat.",
+    "stackable": false,
+    "sell_value": 0
+  },
+  {
+    "id": "iron_ore",
+    "name": "Iron Ore",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Used by blacksmiths.",
+    "stackable": true,
+    "sell_value": 12
+  },
+  {
+    "id": "oak_wood",
+    "name": "Oak Wood",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Used by shipwrights and carpenters.",
+    "stackable": true,
+    "sell_value": 10
+  },
+  {
+    "id": "coral_fragment",
+    "name": "Coral Fragment",
+    "type": "resource",
+    "rarity": "uncommon",
+    "description": "A crafting material from reef zones.",
+    "stackable": true,
+    "sell_value": 35
+  },
+  {
+    "id": "buggy_ball_recipe",
+    "name": "Buggy Ball Recipe",
+    "type": "blueprint",
+    "rarity": "rare",
+    "description": "Unlocks explosive ammo crafting later.",
+    "stackable": false,
+    "sell_value": 300
+  },
+  {
+    "id": "higuma_cloak",
+    "name": "Higuma's Bear Cloak",
+    "type": "cosmetic",
+    "rarity": "rare",
+    "description": "A rugged cloak taken from a mountain bandit legend.",
+    "stackable": false,
+    "sell_value": 250
+  },
+  {
+    "id": "medicinal_herb",
+    "name": "Medicinal Herb",
+    "type": "resource",
+    "rarity": "common",
+    "description": "A useful herb for early medicine.",
+    "stackable": true,
+    "sell_value": 14
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "type": "consumable",
+    "rarity": "common",
+    "description": "Restores 8 HP and 8 stamina.",
+    "stackable": true,
+    "effects": {
+      "hp": 8,
+      "stamina": 8
+    },
+    "sell_value": 6
+  },
+  {
+    "id": "throwing_knife",
+    "name": "Throwing Knife",
+    "type": "weapon",
+    "rarity": "common",
+    "description": "A light ranged blade.",
+    "stackable": false,
+    "stats": {
+      "attack": 6
+    },
+    "durability": 45,
+    "sell_value": 45
+  },
+  {
+    "id": "smoke_bomb",
+    "name": "Smoke Bomb",
+    "type": "consumable",
+    "rarity": "uncommon",
+    "description": "Useful for escapes and stealth quests.",
+    "stackable": true,
+    "effects": {
+      "stamina": 5
+    },
+    "sell_value": 35
+  },
+  {
+    "id": "chef_ration",
+    "name": "Chef Ration",
+    "type": "consumable",
+    "rarity": "uncommon",
+    "description": "A packed meal from a real cook.",
+    "stackable": true,
+    "effects": {
+      "hp": 45,
+      "stamina": 35
+    },
+    "sell_value": 60
+  },
+  {
+    "id": "sardine",
+    "name": "Sardine",
+    "type": "resource",
+    "rarity": "common",
+    "description": "A common fish.",
+    "stackable": true,
+    "sell_value": 5
+  },
+  {
+    "id": "tuna",
+    "name": "Tuna",
+    "type": "resource",
+    "rarity": "common",
+    "description": "A reliable fish for cooking.",
+    "stackable": true,
+    "sell_value": 12
+  },
+  {
+    "id": "blue_snapper",
+    "name": "Blue Snapper",
+    "type": "resource",
+    "rarity": "uncommon",
+    "description": "A bright fish found in healthy waters.",
+    "stackable": true,
+    "sell_value": 32
+  }
 ]

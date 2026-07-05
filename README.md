@@ -1,53 +1,35 @@
-# Grand Line: Legacy — Real Sprint 5
+# Grand Line Legacy — Real Sprint 6
 
-Sprint 5 adds the first real Haki framework on top of Sprints 1–4.
+Sprint 6 adds the Island/NPC living world layer on top of Sprint 5.
 
-## Included from earlier sprints
-- `/start`, `/profile`
-- `/inventory`, `/inspect`, `/use`, `/drop`, `/lockitem`
-- `/equip`, `/unequip`, `/equipment`
-- `/lootchest`, `/testbossloot`
-- `/map`, `/travel`
-- `/bosses`, `/bossfight`, `/bossaction`, `/bosscodex`, `/rest`
-- `/fruitdex`, `/fruitfind`, `/eatfruit`, `/fruit`, `/fruittrain`, `/fruitability`, `/awakenfruit`
-- PostgreSQL schema for players, inventory, equipment, loot, quests, boss codex, combat sessions, and fruits
+## New commands
 
-## New in Sprint 5 — Haki Engine v1
-Commands:
-- `/haki` — View Observation, Armament, and Conqueror progression
-- `/trainhaki haki_type:<observation|armament|conqueror>` — Train unlocked Haki using stamina
-- `/observe` — Toggle Observation Haki bonuses
-- `/coat` — Toggle Armament Haki coating bonuses
-- `/conquer` — Toggle Conqueror's Haki pressure if awakened
-- `/hakistats` — View exact active Haki combat modifiers
+- `/island` — current island details
+- `/travelmenu` — connected routes
+- `/travel destination_id` — travel to connected islands
+- `/npcs` — local NPC list
+- `/talknpc npc_id` — talk to NPCs and gain friendship
+- `/shops` — local shops
+- `/shop shop_id` — shop inventory
+- `/buy shop_id item_id quantity` — buy items
+- `/searchtreasure` — find unclaimed island treasure
+- `/gather resource_id` — gather local resources
 
-Data:
-- `data/haki.json` contains Observation, Armament, and Conqueror progression data
+## New data files
 
-Database additions:
-- `player_haki`
-- `haki_training_log`
+- `data/islands.json` expanded to major world regions
+- `data/island_details.json`
+- `data/npcs.json`
+- `data/shops.json`
+- `data/treasures.json`
 
-Code additions:
-- `services/haki_service.py`
-- `cogs/haki.py`
-- `bot.py` now loads `cogs.haki`
+## New persistence tables
 
-## Current Haki behavior
-- Observation auto-unlocks at level 40.
-- Armament auto-unlocks at level 60.
-- Conqueror's Haki requires hidden potential before it can train.
-- Haki training costs stamina and gives XP.
-- Active Haki generates combat modifiers through `HakiService.combat_modifiers()`.
+- `island_discoveries`
+- `npc_relationships`
+- `player_treasures`
+- `world_event_log`
 
-## Setup
-1. Create `.env` from `.env.example`.
-2. Run `pip install -r requirements.txt`.
-3. Run the full `sql/schema.sql` against PostgreSQL.
-4. Start with `python bot.py`.
+## Commit message
 
-## Git commit suggestion
-`Sprint 5 - Haki Engine v1`
-
-## Notes
-This is Haki framework v1. Sprint 5.2 should wire these modifiers deeper into boss combat calculations and add Observation dodge / Armament damage-defense effects during actual turns.
+`Sprint 6 - Island NPC Living World Engine`

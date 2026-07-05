@@ -1,0 +1,1279 @@
+[
+  {
+    "island_id": "foosha_village",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Foosha Village",
+      "Old local rumor in Foosha Village",
+      "Rare night encounter near Foosha Village"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "mt_colubo",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Mt. Colubo",
+      "Old local rumor in Mt. Colubo",
+      "Rare night encounter near Mt. Colubo"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "dawn_island_coast",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Dawn Island Coast",
+      "Old local rumor in Dawn Island Coast",
+      "Rare night encounter near Dawn Island Coast"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "shells_town",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Shells Town",
+      "Old local rumor in Shells Town",
+      "Rare night encounter near Shells Town"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "orange_town",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Orange Town",
+      "Old local rumor in Orange Town",
+      "Rare night encounter near Orange Town"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "syrup_village",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Syrup Village",
+      "Old local rumor in Syrup Village",
+      "Rare night encounter near Syrup Village"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "gecko_islands",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Gecko Islands",
+      "Old local rumor in Gecko Islands",
+      "Rare night encounter near Gecko Islands"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "baratie",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Baratie",
+      "Old local rumor in Baratie",
+      "Rare night encounter near Baratie"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "conomi_village",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Conomi Village",
+      "Old local rumor in Conomi Village",
+      "Rare night encounter near Conomi Village"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "arlong_park",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Arlong Park",
+      "Old local rumor in Arlong Park",
+      "Rare night encounter near Arlong Park"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "loguetown",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Loguetown",
+      "Old local rumor in Loguetown",
+      "Rare night encounter near Loguetown"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "reverse_mountain",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Reverse Mountain",
+      "Old local rumor in Reverse Mountain",
+      "Rare night encounter near Reverse Mountain"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "twin_cape",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Twin Cape",
+      "Old local rumor in Twin Cape",
+      "Rare night encounter near Twin Cape"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "whiskey_peak",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Whiskey Peak",
+      "Old local rumor in Whiskey Peak",
+      "Rare night encounter near Whiskey Peak"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "little_garden",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Little Garden",
+      "Old local rumor in Little Garden",
+      "Rare night encounter near Little Garden"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "drum_island",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Drum Island",
+      "Old local rumor in Drum Island",
+      "Rare night encounter near Drum Island"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "nanohana",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Nanohana",
+      "Old local rumor in Nanohana",
+      "Rare night encounter near Nanohana"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "rainbase",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Rainbase",
+      "Old local rumor in Rainbase",
+      "Rare night encounter near Rainbase"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "alubarna",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Alubarna",
+      "Old local rumor in Alubarna",
+      "Rare night encounter near Alubarna"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "yuba",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Yuba",
+      "Old local rumor in Yuba",
+      "Rare night encounter near Yuba"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "royal_mausoleum",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Royal Mausoleum",
+      "Old local rumor in Royal Mausoleum",
+      "Rare night encounter near Royal Mausoleum"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "mock_town",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Mock Town",
+      "Old local rumor in Mock Town",
+      "Rare night encounter near Mock Town"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "crickets_house",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Cricket's House",
+      "Old local rumor in Cricket's House",
+      "Rare night encounter near Cricket's House"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "angel_beach",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Angel Beach",
+      "Old local rumor in Angel Beach",
+      "Rare night encounter near Angel Beach"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "upper_yard",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Upper Yard",
+      "Old local rumor in Upper Yard",
+      "Rare night encounter near Upper Yard"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "gods_shrine",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of God's Shrine",
+      "Old local rumor in God's Shrine",
+      "Rare night encounter near God's Shrine"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "shandora",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Shandora",
+      "Old local rumor in Shandora",
+      "Rare night encounter near Shandora"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "ark_maxim",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Ark Maxim",
+      "Old local rumor in Ark Maxim",
+      "Rare night encounter near Ark Maxim"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "water_7",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Royal District",
+      "Industrial District",
+      "Underground",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Water 7",
+      "Old local rumor in Water 7",
+      "Rare night encounter near Water 7"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "enies_lobby",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Enies Lobby",
+      "Old local rumor in Enies Lobby",
+      "Rare night encounter near Enies Lobby"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "thriller_bark",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Thriller Bark",
+      "Old local rumor in Thriller Bark",
+      "Rare night encounter near Thriller Bark"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "sabaody",
+    "climate": "temperate",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Sabaody Archipelago",
+      "Old local rumor in Sabaody Archipelago",
+      "Rare night encounter near Sabaody Archipelago"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "fishman_island",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Fish-Man Island",
+      "Old local rumor in Fish-Man Island",
+      "Rare night encounter near Fish-Man Island"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "punk_hazard",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Punk Hazard",
+      "Old local rumor in Punk Hazard",
+      "Rare night encounter near Punk Hazard"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "dressrosa",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Royal District",
+      "Industrial District",
+      "Underground",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Dressrosa",
+      "Old local rumor in Dressrosa",
+      "Rare night encounter near Dressrosa"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "zou",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Zou",
+      "Old local rumor in Zou",
+      "Rare night encounter near Zou"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "whole_cake",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Whole Cake Island",
+      "Old local rumor in Whole Cake Island",
+      "Rare night encounter near Whole Cake Island"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "wano",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Royal District",
+      "Industrial District",
+      "Underground",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Wano",
+      "Old local rumor in Wano",
+      "Rare night encounter near Wano"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "egghead",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Egghead",
+      "Old local rumor in Egghead",
+      "Rare night encounter near Egghead"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "elbaf",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Elbaf",
+      "Old local rumor in Elbaf",
+      "Rare night encounter near Elbaf"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  },
+  {
+    "island_id": "laugh_tale",
+    "climate": "varied",
+    "districts": [
+      "Harbor",
+      "Market",
+      "Residential",
+      "Wilds"
+    ],
+    "secrets": [
+      "Hidden cache of Laugh Tale",
+      "Old local rumor in Laugh Tale",
+      "Rare night encounter near Laugh Tale"
+    ],
+    "world_events": [
+      "Traveling merchant arrival",
+      "Rare resource bloom",
+      "Local trouble",
+      "Weather shift"
+    ],
+    "resources": [
+      "oak_wood",
+      "iron_ore",
+      "medicinal_herb"
+    ],
+    "fish": [
+      "sardine",
+      "tuna",
+      "blue_snapper"
+    ]
+  }
+]

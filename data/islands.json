@@ -1,7 +1,509 @@
 [
-  {"id":"foosha_village","name":"Foosha Village","region":"East Blue","level_range":"1-10","description":"A peaceful village where many journeys begin."},
-  {"id":"mt_colubo","name":"Mt. Colubo","region":"East Blue","level_range":"5-15","description":"Forested mountain paths, bandit camps, and hidden childhood trails."},
-  {"id":"shells_town","name":"Shells Town","region":"East Blue","level_range":"10-20","description":"A Marine-controlled town with a strict base and busy harbor."},
-  {"id":"orange_town","name":"Orange Town","region":"East Blue","level_range":"10-18","description":"A rebuilding town scarred by pirate circus raids."},
-  {"id":"syrup_village","name":"Syrup Village","region":"East Blue","level_range":"15-25","description":"A quiet village with forests, orchards, and suspicious shadows."}
+  {
+    "id": "foosha_village",
+    "name": "Foosha Village",
+    "region": "East Blue",
+    "level_range": "1-10",
+    "min_level": 1,
+    "description": "A peaceful village where many journeys begin.",
+    "travel_connections": [
+      "mt_colubo",
+      "dawn_island_coast"
+    ]
+  },
+  {
+    "id": "mt_colubo",
+    "name": "Mt. Colubo",
+    "region": "East Blue",
+    "level_range": "5-15",
+    "min_level": 5,
+    "description": "Forested mountain paths, bandit camps, and hidden childhood trails.",
+    "travel_connections": [
+      "foosha_village",
+      "dawn_island_coast"
+    ]
+  },
+  {
+    "id": "dawn_island_coast",
+    "name": "Dawn Island Coast",
+    "region": "East Blue",
+    "level_range": "5-15",
+    "min_level": 5,
+    "description": "Tide pools, reefs, caves, and the first real sailing lessons.",
+    "travel_connections": [
+      "foosha_village",
+      "mt_colubo",
+      "shells_town"
+    ]
+  },
+  {
+    "id": "shells_town",
+    "name": "Shells Town",
+    "region": "East Blue",
+    "level_range": "10-20",
+    "min_level": 10,
+    "description": "A Marine-controlled town with a strict base and busy harbor.",
+    "travel_connections": [
+      "dawn_island_coast",
+      "orange_town"
+    ]
+  },
+  {
+    "id": "orange_town",
+    "name": "Orange Town",
+    "region": "East Blue",
+    "level_range": "10-18",
+    "min_level": 10,
+    "description": "A rebuilding town scarred by pirate circus raids.",
+    "travel_connections": [
+      "shells_town",
+      "syrup_village"
+    ]
+  },
+  {
+    "id": "syrup_village",
+    "name": "Syrup Village",
+    "region": "East Blue",
+    "level_range": "15-25",
+    "min_level": 15,
+    "description": "A quiet village with forests, orchards, and suspicious shadows.",
+    "travel_connections": [
+      "orange_town",
+      "gecko_islands",
+      "baratie"
+    ]
+  },
+  {
+    "id": "gecko_islands",
+    "name": "Gecko Islands",
+    "region": "East Blue",
+    "level_range": "16-26",
+    "min_level": 16,
+    "description": "Rocky coastal islands with caves, lizards, and smugglers.",
+    "travel_connections": [
+      "syrup_village",
+      "baratie"
+    ]
+  },
+  {
+    "id": "baratie",
+    "name": "Baratie",
+    "region": "East Blue",
+    "level_range": "20-35",
+    "min_level": 20,
+    "description": "A floating restaurant where cooks, pirates, and sea beasts collide.",
+    "travel_connections": [
+      "syrup_village",
+      "gecko_islands",
+      "conomi_village"
+    ]
+  },
+  {
+    "id": "conomi_village",
+    "name": "Conomi Village",
+    "region": "East Blue",
+    "level_range": "22-35",
+    "min_level": 22,
+    "description": "Orange groves, hidden tunnels, and villagers resisting Fish-Man control.",
+    "travel_connections": [
+      "baratie",
+      "arlong_park"
+    ]
+  },
+  {
+    "id": "arlong_park",
+    "name": "Arlong Park",
+    "region": "East Blue",
+    "level_range": "25-40",
+    "min_level": 25,
+    "description": "A fortress of Fish-Man oppression, shark pools, coral caverns, and hidden vaults.",
+    "travel_connections": [
+      "conomi_village",
+      "loguetown"
+    ]
+  },
+  {
+    "id": "loguetown",
+    "name": "Loguetown",
+    "region": "East Blue",
+    "level_range": "35-55",
+    "min_level": 35,
+    "description": "The city of beginnings and endings, filled with Marines, weapon shops, and secrets.",
+    "travel_connections": [
+      "arlong_park",
+      "reverse_mountain"
+    ]
+  },
+  {
+    "id": "reverse_mountain",
+    "name": "Reverse Mountain",
+    "region": "Paradise",
+    "level_range": "45-65",
+    "min_level": 45,
+    "description": "A dangerous canal into the Grand Line with storms and impossible currents.",
+    "travel_connections": [
+      "loguetown",
+      "twin_cape"
+    ]
+  },
+  {
+    "id": "twin_cape",
+    "name": "Twin Cape",
+    "region": "Paradise",
+    "level_range": "50-70",
+    "min_level": 50,
+    "description": "A lighthouse, whale bay, and the first true Grand Line mysteries.",
+    "travel_connections": [
+      "reverse_mountain",
+      "whiskey_peak"
+    ]
+  },
+  {
+    "id": "whiskey_peak",
+    "name": "Whiskey Peak",
+    "region": "Paradise",
+    "level_range": "55-75",
+    "min_level": 55,
+    "description": "A bounty hunter town disguised as a welcoming party.",
+    "travel_connections": [
+      "twin_cape",
+      "little_garden"
+    ]
+  },
+  {
+    "id": "little_garden",
+    "name": "Little Garden",
+    "region": "Paradise",
+    "level_range": "65-90",
+    "min_level": 65,
+    "description": "A prehistoric jungle where giants duel and dinosaurs roam.",
+    "travel_connections": [
+      "whiskey_peak",
+      "drum_island"
+    ]
+  },
+  {
+    "id": "drum_island",
+    "name": "Drum Island",
+    "region": "Paradise",
+    "level_range": "75-100",
+    "min_level": 75,
+    "description": "A snowy medical kingdom of blizzards, castles, and rare herbs.",
+    "travel_connections": [
+      "little_garden",
+      "nanohana"
+    ]
+  },
+  {
+    "id": "nanohana",
+    "name": "Nanohana",
+    "region": "Alabasta",
+    "level_range": "85-110",
+    "min_level": 85,
+    "description": "A desert harbor full of merchants, spies, spice markets, and royal patrols.",
+    "travel_connections": [
+      "drum_island",
+      "rainbase",
+      "alubarna"
+    ]
+  },
+  {
+    "id": "rainbase",
+    "name": "Rainbase",
+    "region": "Alabasta",
+    "level_range": "90-120",
+    "min_level": 90,
+    "description": "Casino lights, underground cells, and Baroque Works secrets.",
+    "travel_connections": [
+      "nanohana",
+      "alubarna",
+      "yuba"
+    ]
+  },
+  {
+    "id": "alubarna",
+    "name": "Alubarna",
+    "region": "Alabasta",
+    "level_range": "100-130",
+    "min_level": 100,
+    "description": "The royal capital of Alabasta, filled with guards, ruins, and political quests.",
+    "travel_connections": [
+      "nanohana",
+      "rainbase",
+      "yuba",
+      "royal_mausoleum"
+    ]
+  },
+  {
+    "id": "yuba",
+    "name": "Yuba",
+    "region": "Alabasta",
+    "level_range": "95-125",
+    "min_level": 95,
+    "description": "A struggling oasis town fighting drought and sandstorms.",
+    "travel_connections": [
+      "rainbase",
+      "alubarna"
+    ]
+  },
+  {
+    "id": "royal_mausoleum",
+    "name": "Royal Mausoleum",
+    "region": "Alabasta",
+    "level_range": "115-140",
+    "min_level": 115,
+    "description": "Ancient tombs, royal spirits, traps, and hidden historical relics.",
+    "travel_connections": [
+      "alubarna"
+    ]
+  },
+  {
+    "id": "mock_town",
+    "name": "Mock Town",
+    "region": "Jaya",
+    "level_range": "120-150",
+    "min_level": 120,
+    "description": "A lawless pirate town where rumors, black markets, and sky clues begin.",
+    "travel_connections": [
+      "alubarna",
+      "crickets_house",
+      "angel_beach"
+    ]
+  },
+  {
+    "id": "crickets_house",
+    "name": "Cricket's House",
+    "region": "Jaya",
+    "level_range": "120-150",
+    "min_level": 120,
+    "description": "A salvage base full of diving quests, old stories, and golden dreams.",
+    "travel_connections": [
+      "mock_town",
+      "angel_beach"
+    ]
+  },
+  {
+    "id": "angel_beach",
+    "name": "Angel Beach",
+    "region": "Skypiea",
+    "level_range": "135-155",
+    "min_level": 135,
+    "description": "A peaceful sky beach with dials, cloud farms, and White Sea wildlife.",
+    "travel_connections": [
+      "mock_town",
+      "crickets_house",
+      "upper_yard"
+    ]
+  },
+  {
+    "id": "upper_yard",
+    "name": "Upper Yard",
+    "region": "Skypiea",
+    "level_range": "145-170",
+    "min_level": 145,
+    "description": "A sacred jungle of ruins, warriors, giant beasts, and golden secrets.",
+    "travel_connections": [
+      "angel_beach",
+      "gods_shrine",
+      "shandora"
+    ]
+  },
+  {
+    "id": "gods_shrine",
+    "name": "God's Shrine",
+    "region": "Skypiea",
+    "level_range": "160-185",
+    "min_level": 160,
+    "description": "A divine trial zone of priests, lightning, and collapsing cloud terrain.",
+    "travel_connections": [
+      "upper_yard",
+      "ark_maxim"
+    ]
+  },
+  {
+    "id": "shandora",
+    "name": "Shandora",
+    "region": "Skypiea",
+    "level_range": "160-190",
+    "min_level": 160,
+    "description": "Ancient golden ruins filled with guardians, lore, and the Golden Bell.",
+    "travel_connections": [
+      "upper_yard",
+      "ark_maxim"
+    ]
+  },
+  {
+    "id": "ark_maxim",
+    "name": "Ark Maxim",
+    "region": "Skypiea",
+    "level_range": "180-210",
+    "min_level": 180,
+    "description": "A flying ark of thunder constructs, machinery, and Enel's legacy.",
+    "travel_connections": [
+      "gods_shrine",
+      "shandora",
+      "water_7"
+    ]
+  },
+  {
+    "id": "water_7",
+    "name": "Water 7",
+    "region": "Paradise",
+    "level_range": "190-230",
+    "min_level": 190,
+    "description": "A giant canal city of shipwrights, blueprints, rooftops, and secret tunnels.",
+    "travel_connections": [
+      "ark_maxim",
+      "galley_la_hq",
+      "franky_family_hideout",
+      "sea_train"
+    ]
+  },
+  {
+    "id": "enies_lobby",
+    "name": "Enies Lobby",
+    "region": "Paradise",
+    "level_range": "220-260",
+    "min_level": 220,
+    "description": "Judicial island, CP9 agents, Buster Call events, and the Tower of Justice.",
+    "travel_connections": [
+      "sea_train",
+      "water_7",
+      "thriller_bark"
+    ]
+  },
+  {
+    "id": "thriller_bark",
+    "name": "Thriller Bark",
+    "region": "Florian Triangle",
+    "level_range": "240-300",
+    "min_level": 240,
+    "description": "A haunted island ship with ghosts, curses, zombies, and shadow theft.",
+    "travel_connections": [
+      "enies_lobby",
+      "sabaody"
+    ]
+  },
+  {
+    "id": "sabaody",
+    "name": "Sabaody Archipelago",
+    "region": "Paradise",
+    "level_range": "300-350",
+    "min_level": 300,
+    "description": "Mangrove groves, bubbles, auction houses, Pacifistas, and Admiral incidents.",
+    "travel_connections": [
+      "thriller_bark",
+      "amazon_lily",
+      "fishman_island"
+    ]
+  },
+  {
+    "id": "fishman_island",
+    "name": "Fish-Man Island",
+    "region": "New World",
+    "level_range": "350-400",
+    "min_level": 350,
+    "description": "An underwater kingdom of coral forests, mermaid coves, and ancient Sea King lore.",
+    "travel_connections": [
+      "sabaody",
+      "punk_hazard"
+    ]
+  },
+  {
+    "id": "punk_hazard",
+    "name": "Punk Hazard",
+    "region": "New World",
+    "level_range": "400-450",
+    "min_level": 400,
+    "description": "A half-burning, half-frozen laboratory island full of experiments and gas hazards.",
+    "travel_connections": [
+      "fishman_island",
+      "dressrosa"
+    ]
+  },
+  {
+    "id": "dressrosa",
+    "name": "Dressrosa",
+    "region": "New World",
+    "level_range": "450-520",
+    "min_level": 450,
+    "description": "A massive kingdom of toys, colosseum fights, factories, and royal secrets.",
+    "travel_connections": [
+      "punk_hazard",
+      "zou"
+    ]
+  },
+  {
+    "id": "zou",
+    "name": "Zou",
+    "region": "New World",
+    "level_range": "520-580",
+    "min_level": 520,
+    "description": "A living elephant island with Mink warriors, forests, and ancient paths.",
+    "travel_connections": [
+      "dressrosa",
+      "whole_cake"
+    ]
+  },
+  {
+    "id": "whole_cake",
+    "name": "Whole Cake Island",
+    "region": "New World",
+    "level_range": "580-650",
+    "min_level": 580,
+    "description": "A Yonko territory of candy seas, soul homies, and tea party dangers.",
+    "travel_connections": [
+      "zou",
+      "wano"
+    ]
+  },
+  {
+    "id": "wano",
+    "name": "Wano",
+    "region": "New World",
+    "level_range": "650-760",
+    "min_level": 650,
+    "description": "A closed samurai nation with Onigashima, swordsmiths, Oni bosses, and Haki trials.",
+    "travel_connections": [
+      "whole_cake",
+      "egghead",
+      "elbaf"
+    ]
+  },
+  {
+    "id": "egghead",
+    "name": "Egghead",
+    "region": "New World",
+    "level_range": "760-840",
+    "min_level": 760,
+    "description": "The future island of labs, Seraphim, Frontier Dome defenses, and forbidden science.",
+    "travel_connections": [
+      "wano",
+      "elbaf"
+    ]
+  },
+  {
+    "id": "elbaf",
+    "name": "Elbaf",
+    "region": "New World",
+    "level_range": "840-930",
+    "min_level": 840,
+    "description": "The land of giants, runes, Yggdrasil, frost giants, and legendary smiths.",
+    "travel_connections": [
+      "wano",
+      "egghead",
+      "laugh_tale"
+    ]
+  },
+  {
+    "id": "laugh_tale",
+    "name": "Laugh Tale",
+    "region": "Endgame",
+    "level_range": "930-1000",
+    "min_level": 930,
+    "description": "The final island of inherited will, ancient truth, and ultimate trials.",
+    "travel_connections": [
+      "elbaf"
+    ]
+  }
 ]

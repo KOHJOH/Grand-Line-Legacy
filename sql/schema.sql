@@ -164,3 +164,42 @@ CREATE TABLE IF NOT EXISTS haki_training_log (
     level_after INTEGER NOT NULL,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+
+-- Sprint 6: Island, NPC, shop, treasure, and discovery engine
+CREATE TABLE IF NOT EXISTS island_discoveries (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    island_id TEXT NOT NULL,
+    visits INTEGER NOT NULL DEFAULT 1,
+    first_visited_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    last_visited_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    secrets_found JSONB NOT NULL DEFAULT '[]'::jsonb,
+    PRIMARY KEY(discord_id, island_id)
+);
+
+CREATE TABLE IF NOT EXISTS npc_relationships (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    npc_id TEXT NOT NULL,
+    friendship INTEGER NOT NULL DEFAULT 0,
+    talks INTEGER NOT NULL DEFAULT 0,
+    flags JSONB NOT NULL DEFAULT '{}'::jsonb,
+    last_talked_at TIMESTAMPTZ,
+    PRIMARY KEY(discord_id, npc_id)
+);
+
+CREATE TABLE IF NOT EXISTS player_treasures (
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    treasure_id TEXT NOT NULL,
+    island_id TEXT NOT NULL,
+    found_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(discord_id, treasure_id)
+);
+
+CREATE TABLE IF NOT EXISTS world_event_log (
+    id BIGSERIAL PRIMARY KEY,
+    island_id TEXT NOT NULL,
+    event_type TEXT NOT NULL,
+    description TEXT NOT NULL,
+    payload JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

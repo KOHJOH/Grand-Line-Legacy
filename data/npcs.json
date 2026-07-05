@@ -1,0 +1,890 @@
+[
+  {
+    "id": "makino",
+    "name": "Makino",
+    "island_id": "foosha_village",
+    "role": "Tavern Keeper",
+    "service": "food_shop",
+    "friendship": true,
+    "schedule": {
+      "morning": "preparing breakfast at the tavern",
+      "afternoon": "serving villagers",
+      "night": "cleaning the tavern"
+    },
+    "dialogue": {
+      "default": "Welcome back. The sea feels calm today, but journeys never stay calm forever.",
+      "friend": "You are starting to feel like family around here.",
+      "quest": "If you help the village, people will remember it."
+    }
+  },
+  {
+    "id": "woop_slap",
+    "name": "Mayor Woop Slap",
+    "island_id": "foosha_village",
+    "role": "Mayor",
+    "service": "local_lore",
+    "friendship": true,
+    "schedule": {
+      "morning": "checking the village square",
+      "afternoon": "arguing about pirate trouble",
+      "night": "watching the windmill"
+    },
+    "dialogue": {
+      "default": "Do not rush to the sea without understanding what it takes from people.",
+      "friend": "You have grown steadier than I expected."
+    }
+  },
+  {
+    "id": "hideo",
+    "name": "Blacksmith Hideo",
+    "island_id": "foosha_village",
+    "role": "Blacksmith",
+    "service": "weapon_shop",
+    "friendship": true,
+    "dialogue": {
+      "default": "A blade is only as good as the hand holding it."
+    }
+  },
+  {
+    "id": "kent",
+    "name": "Fisherman Kent",
+    "island_id": "foosha_village",
+    "role": "Fisherman",
+    "service": "fishing_trainer",
+    "friendship": true,
+    "dialogue": {
+      "default": "The current pulled strange things near the cliffs lately."
+    }
+  },
+  {
+    "id": "dadan",
+    "name": "Dadan",
+    "island_id": "mt_colubo",
+    "role": "Bandit Caretaker",
+    "service": "rumors",
+    "friendship": true,
+    "dialogue": {
+      "default": "If you came here looking for easy treasure, you picked the wrong mountain."
+    }
+  },
+  {
+    "id": "dogra",
+    "name": "Dogra",
+    "island_id": "mt_colubo",
+    "role": "Bandit",
+    "service": "camp_shop",
+    "dialogue": {
+      "default": "Need supplies? Do not ask where I got them."
+    }
+  },
+  {
+    "id": "coast_guard_allen",
+    "name": "Recruit Allen",
+    "island_id": "dawn_island_coast",
+    "role": "Coast Guard",
+    "service": "sailing_tips",
+    "dialogue": {
+      "default": "Watch the reefs. They ruin more ships than pirates do."
+    }
+  },
+  {
+    "id": "rika",
+    "name": "Rika",
+    "island_id": "shells_town",
+    "role": "Child",
+    "service": "quest_giver",
+    "friendship": true,
+    "dialogue": {
+      "default": "The Marines are scary sometimes, but not all of them are bad."
+    }
+  },
+  {
+    "id": "rowan",
+    "name": "Blacksmith Rowan",
+    "island_id": "shells_town",
+    "role": "Blacksmith",
+    "service": "weapon_shop",
+    "dialogue": {
+      "default": "Morgan made this town afraid of its own shadows."
+    }
+  },
+  {
+    "id": "boodle",
+    "name": "Boodle",
+    "island_id": "orange_town",
+    "role": "Mayor",
+    "service": "local_lore",
+    "friendship": true,
+    "dialogue": {
+      "default": "This town has been knocked down before. We rebuild. Always."
+    }
+  },
+  {
+    "id": "chouchou",
+    "name": "Chouchou",
+    "island_id": "orange_town",
+    "role": "Loyal Dog",
+    "service": "companion_lore",
+    "friendship": true,
+    "dialogue": {
+      "default": "Chouchou watches the old shop quietly."
+    }
+  },
+  {
+    "id": "kaya",
+    "name": "Kaya",
+    "island_id": "syrup_village",
+    "role": "Heir",
+    "service": "medicine_help",
+    "friendship": true,
+    "dialogue": {
+      "default": "The village looks peaceful, but I feel something watching from the forest."
+    }
+  },
+  {
+    "id": "merry",
+    "name": "Merry",
+    "island_id": "syrup_village",
+    "role": "Butler",
+    "service": "blueprint_lore",
+    "dialogue": {
+      "default": "A good ship is built from care, not just wood."
+    }
+  },
+  {
+    "id": "zeff",
+    "name": "Zeff",
+    "island_id": "baratie",
+    "role": "Master Chef",
+    "service": "black_leg_trainer",
+    "friendship": true,
+    "dialogue": {
+      "default": "Kicks, cooking, survival. Learn all three or get out of my kitchen."
+    }
+  },
+  {
+    "id": "patty",
+    "name": "Patty",
+    "island_id": "baratie",
+    "role": "Cook",
+    "service": "food_shop",
+    "dialogue": {
+      "default": "Hungry pirates pay first, complain second."
+    }
+  },
+  {
+    "id": "genzo",
+    "name": "Genzo",
+    "island_id": "conomi_village",
+    "role": "Village Officer",
+    "service": "local_lore",
+    "friendship": true,
+    "dialogue": {
+      "default": "This village has survived fear before. We can survive it again."
+    }
+  },
+  {
+    "id": "nojiko",
+    "name": "Nojiko",
+    "island_id": "conomi_village",
+    "role": "Orange Farmer",
+    "service": "gathering_quest",
+    "friendship": true,
+    "dialogue": {
+      "default": "The grove needs careful hands. Take only what you need."
+    }
+  },
+  {
+    "id": "crocus",
+    "name": "Crocus",
+    "island_id": "twin_cape",
+    "role": "Lighthouse Keeper",
+    "service": "navigation_trainer",
+    "friendship": true,
+    "dialogue": {
+      "default": "The Grand Line is not a straight path. It is a test of patience."
+    }
+  },
+  {
+    "id": "rayleigh",
+    "name": "Silvers Rayleigh",
+    "island_id": "sabaody",
+    "role": "Haki Mentor",
+    "service": "haki_trainer",
+    "friendship": true,
+    "dialogue": {
+      "default": "Power without control is just noise."
+    }
+  },
+  {
+    "id": "jinbe",
+    "name": "Jinbe",
+    "island_id": "fishman_island",
+    "role": "Fish-Man Karate Master",
+    "service": "fishman_karate_trainer",
+    "friendship": true,
+    "dialogue": {
+      "default": "Strength is measured by what you protect."
+    }
+  },
+  {
+    "id": "gecko_islands_guide",
+    "name": "Gecko Islands Guide",
+    "island_id": "gecko_islands",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Gecko Islands. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "gecko_islands_merchant",
+    "name": "Gecko Islands Merchant",
+    "island_id": "gecko_islands",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "arlong_park_guide",
+    "name": "Arlong Park Guide",
+    "island_id": "arlong_park",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Arlong Park. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "arlong_park_merchant",
+    "name": "Arlong Park Merchant",
+    "island_id": "arlong_park",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "loguetown_guide",
+    "name": "Loguetown Guide",
+    "island_id": "loguetown",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Loguetown. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "loguetown_merchant",
+    "name": "Loguetown Merchant",
+    "island_id": "loguetown",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "reverse_mountain_guide",
+    "name": "Reverse Mountain Guide",
+    "island_id": "reverse_mountain",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Reverse Mountain. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "reverse_mountain_merchant",
+    "name": "Reverse Mountain Merchant",
+    "island_id": "reverse_mountain",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "whiskey_peak_guide",
+    "name": "Whiskey Peak Guide",
+    "island_id": "whiskey_peak",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Whiskey Peak. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "whiskey_peak_merchant",
+    "name": "Whiskey Peak Merchant",
+    "island_id": "whiskey_peak",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "little_garden_guide",
+    "name": "Little Garden Guide",
+    "island_id": "little_garden",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Little Garden. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "little_garden_merchant",
+    "name": "Little Garden Merchant",
+    "island_id": "little_garden",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "drum_island_guide",
+    "name": "Drum Island Guide",
+    "island_id": "drum_island",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Drum Island. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "drum_island_merchant",
+    "name": "Drum Island Merchant",
+    "island_id": "drum_island",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "nanohana_guide",
+    "name": "Nanohana Guide",
+    "island_id": "nanohana",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Nanohana. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "nanohana_merchant",
+    "name": "Nanohana Merchant",
+    "island_id": "nanohana",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "rainbase_guide",
+    "name": "Rainbase Guide",
+    "island_id": "rainbase",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Rainbase. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "rainbase_merchant",
+    "name": "Rainbase Merchant",
+    "island_id": "rainbase",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "alubarna_guide",
+    "name": "Alubarna Guide",
+    "island_id": "alubarna",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Alubarna. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "alubarna_merchant",
+    "name": "Alubarna Merchant",
+    "island_id": "alubarna",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "yuba_guide",
+    "name": "Yuba Guide",
+    "island_id": "yuba",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Yuba. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "yuba_merchant",
+    "name": "Yuba Merchant",
+    "island_id": "yuba",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "royal_mausoleum_guide",
+    "name": "Royal Mausoleum Guide",
+    "island_id": "royal_mausoleum",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Royal Mausoleum. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "royal_mausoleum_merchant",
+    "name": "Royal Mausoleum Merchant",
+    "island_id": "royal_mausoleum",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "mock_town_guide",
+    "name": "Mock Town Guide",
+    "island_id": "mock_town",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Mock Town. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "mock_town_merchant",
+    "name": "Mock Town Merchant",
+    "island_id": "mock_town",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "crickets_house_guide",
+    "name": "Cricket's House Guide",
+    "island_id": "crickets_house",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Cricket's House. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "crickets_house_merchant",
+    "name": "Cricket's House Merchant",
+    "island_id": "crickets_house",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "angel_beach_guide",
+    "name": "Angel Beach Guide",
+    "island_id": "angel_beach",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Angel Beach. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "angel_beach_merchant",
+    "name": "Angel Beach Merchant",
+    "island_id": "angel_beach",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "upper_yard_guide",
+    "name": "Upper Yard Guide",
+    "island_id": "upper_yard",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Upper Yard. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "upper_yard_merchant",
+    "name": "Upper Yard Merchant",
+    "island_id": "upper_yard",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "gods_shrine_guide",
+    "name": "God's Shrine Guide",
+    "island_id": "gods_shrine",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to God's Shrine. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "gods_shrine_merchant",
+    "name": "God's Shrine Merchant",
+    "island_id": "gods_shrine",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "shandora_guide",
+    "name": "Shandora Guide",
+    "island_id": "shandora",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Shandora. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "shandora_merchant",
+    "name": "Shandora Merchant",
+    "island_id": "shandora",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "ark_maxim_guide",
+    "name": "Ark Maxim Guide",
+    "island_id": "ark_maxim",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Ark Maxim. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "ark_maxim_merchant",
+    "name": "Ark Maxim Merchant",
+    "island_id": "ark_maxim",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "water_7_guide",
+    "name": "Water 7 Guide",
+    "island_id": "water_7",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Water 7. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "water_7_merchant",
+    "name": "Water 7 Merchant",
+    "island_id": "water_7",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "enies_lobby_guide",
+    "name": "Enies Lobby Guide",
+    "island_id": "enies_lobby",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Enies Lobby. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "enies_lobby_merchant",
+    "name": "Enies Lobby Merchant",
+    "island_id": "enies_lobby",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "thriller_bark_guide",
+    "name": "Thriller Bark Guide",
+    "island_id": "thriller_bark",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Thriller Bark. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "thriller_bark_merchant",
+    "name": "Thriller Bark Merchant",
+    "island_id": "thriller_bark",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "punk_hazard_guide",
+    "name": "Punk Hazard Guide",
+    "island_id": "punk_hazard",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Punk Hazard. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "punk_hazard_merchant",
+    "name": "Punk Hazard Merchant",
+    "island_id": "punk_hazard",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "dressrosa_guide",
+    "name": "Dressrosa Guide",
+    "island_id": "dressrosa",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Dressrosa. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "dressrosa_merchant",
+    "name": "Dressrosa Merchant",
+    "island_id": "dressrosa",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "zou_guide",
+    "name": "Zou Guide",
+    "island_id": "zou",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Zou. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "zou_merchant",
+    "name": "Zou Merchant",
+    "island_id": "zou",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "whole_cake_guide",
+    "name": "Whole Cake Island Guide",
+    "island_id": "whole_cake",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Whole Cake Island. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "whole_cake_merchant",
+    "name": "Whole Cake Island Merchant",
+    "island_id": "whole_cake",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "wano_guide",
+    "name": "Wano Guide",
+    "island_id": "wano",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Wano. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "wano_merchant",
+    "name": "Wano Merchant",
+    "island_id": "wano",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "egghead_guide",
+    "name": "Egghead Guide",
+    "island_id": "egghead",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Egghead. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "egghead_merchant",
+    "name": "Egghead Merchant",
+    "island_id": "egghead",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "elbaf_guide",
+    "name": "Elbaf Guide",
+    "island_id": "elbaf",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Elbaf. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "elbaf_merchant",
+    "name": "Elbaf Merchant",
+    "island_id": "elbaf",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  },
+  {
+    "id": "laugh_tale_guide",
+    "name": "Laugh Tale Guide",
+    "island_id": "laugh_tale",
+    "role": "Local Guide",
+    "service": "local_lore",
+    "friendship": false,
+    "dialogue": {
+      "default": "Welcome to Laugh Tale. Listen closely and this place will teach you something."
+    }
+  },
+  {
+    "id": "laugh_tale_merchant",
+    "name": "Laugh Tale Merchant",
+    "island_id": "laugh_tale",
+    "role": "Merchant",
+    "service": "general_shop",
+    "friendship": false,
+    "dialogue": {
+      "default": "Fresh stock today. Prices depend on how dangerous the routes have been."
+    }
+  }
+]

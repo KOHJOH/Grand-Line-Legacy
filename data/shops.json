@@ -1,0 +1,842 @@
+[
+  {
+    "id": "makinos_tavern",
+    "name": "Makino's Tavern",
+    "island_id": "foosha_village",
+    "npc_id": "makino",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 20
+      },
+      {
+        "item_id": "water",
+        "price": 15
+      },
+      {
+        "item_id": "meat_skewer",
+        "price": 75
+      }
+    ]
+  },
+  {
+    "id": "foosha_blacksmith",
+    "name": "Foosha Blacksmith",
+    "island_id": "foosha_village",
+    "npc_id": "hideo",
+    "inventory": [
+      {
+        "item_id": "wooden_sword",
+        "price": 50
+      },
+      {
+        "item_id": "iron_cutlass",
+        "price": 300
+      },
+      {
+        "item_id": "bandage",
+        "price": 35
+      }
+    ]
+  },
+  {
+    "id": "colubo_bandit_trader",
+    "name": "Bandit Trader",
+    "island_id": "mt_colubo",
+    "npc_id": "dogra",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 30
+      },
+      {
+        "item_id": "throwing_knife",
+        "price": 80
+      },
+      {
+        "item_id": "smoke_bomb",
+        "price": 120
+      }
+    ]
+  },
+  {
+    "id": "shells_weapons",
+    "name": "Shells Weapon Shop",
+    "island_id": "shells_town",
+    "npc_id": "rowan",
+    "inventory": [
+      {
+        "item_id": "iron_cutlass",
+        "price": 250
+      },
+      {
+        "item_id": "marine_jitte",
+        "price": 900
+      },
+      {
+        "item_id": "leather_vest",
+        "price": 250
+      }
+    ]
+  },
+  {
+    "id": "baratie_food",
+    "name": "Baratie Kitchen",
+    "island_id": "baratie",
+    "npc_id": "patty",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 15
+      },
+      {
+        "item_id": "meat_skewer",
+        "price": 55
+      },
+      {
+        "item_id": "chef_ration",
+        "price": 100
+      }
+    ]
+  },
+  {
+    "id": "dawn_island_coast_general",
+    "name": "Dawn Island Coast General Store",
+    "island_id": "dawn_island_coast",
+    "npc_id": "dawn_island_coast_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "orange_town_general",
+    "name": "Orange Town General Store",
+    "island_id": "orange_town",
+    "npc_id": "orange_town_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "syrup_village_general",
+    "name": "Syrup Village General Store",
+    "island_id": "syrup_village",
+    "npc_id": "syrup_village_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "gecko_islands_general",
+    "name": "Gecko Islands General Store",
+    "island_id": "gecko_islands",
+    "npc_id": "gecko_islands_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "conomi_village_general",
+    "name": "Conomi Village General Store",
+    "island_id": "conomi_village",
+    "npc_id": "conomi_village_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "arlong_park_general",
+    "name": "Arlong Park General Store",
+    "island_id": "arlong_park",
+    "npc_id": "arlong_park_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "loguetown_general",
+    "name": "Loguetown General Store",
+    "island_id": "loguetown",
+    "npc_id": "loguetown_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "reverse_mountain_general",
+    "name": "Reverse Mountain General Store",
+    "island_id": "reverse_mountain",
+    "npc_id": "reverse_mountain_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "twin_cape_general",
+    "name": "Twin Cape General Store",
+    "island_id": "twin_cape",
+    "npc_id": "twin_cape_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "whiskey_peak_general",
+    "name": "Whiskey Peak General Store",
+    "island_id": "whiskey_peak",
+    "npc_id": "whiskey_peak_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "little_garden_general",
+    "name": "Little Garden General Store",
+    "island_id": "little_garden",
+    "npc_id": "little_garden_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "drum_island_general",
+    "name": "Drum Island General Store",
+    "island_id": "drum_island",
+    "npc_id": "drum_island_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "nanohana_general",
+    "name": "Nanohana General Store",
+    "island_id": "nanohana",
+    "npc_id": "nanohana_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "rainbase_general",
+    "name": "Rainbase General Store",
+    "island_id": "rainbase",
+    "npc_id": "rainbase_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "alubarna_general",
+    "name": "Alubarna General Store",
+    "island_id": "alubarna",
+    "npc_id": "alubarna_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "yuba_general",
+    "name": "Yuba General Store",
+    "island_id": "yuba",
+    "npc_id": "yuba_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "royal_mausoleum_general",
+    "name": "Royal Mausoleum General Store",
+    "island_id": "royal_mausoleum",
+    "npc_id": "royal_mausoleum_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "mock_town_general",
+    "name": "Mock Town General Store",
+    "island_id": "mock_town",
+    "npc_id": "mock_town_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "crickets_house_general",
+    "name": "Cricket's House General Store",
+    "island_id": "crickets_house",
+    "npc_id": "crickets_house_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "angel_beach_general",
+    "name": "Angel Beach General Store",
+    "island_id": "angel_beach",
+    "npc_id": "angel_beach_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "upper_yard_general",
+    "name": "Upper Yard General Store",
+    "island_id": "upper_yard",
+    "npc_id": "upper_yard_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "gods_shrine_general",
+    "name": "God's Shrine General Store",
+    "island_id": "gods_shrine",
+    "npc_id": "gods_shrine_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "shandora_general",
+    "name": "Shandora General Store",
+    "island_id": "shandora",
+    "npc_id": "shandora_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "ark_maxim_general",
+    "name": "Ark Maxim General Store",
+    "island_id": "ark_maxim",
+    "npc_id": "ark_maxim_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "water_7_general",
+    "name": "Water 7 General Store",
+    "island_id": "water_7",
+    "npc_id": "water_7_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "enies_lobby_general",
+    "name": "Enies Lobby General Store",
+    "island_id": "enies_lobby",
+    "npc_id": "enies_lobby_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "thriller_bark_general",
+    "name": "Thriller Bark General Store",
+    "island_id": "thriller_bark",
+    "npc_id": "thriller_bark_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "sabaody_general",
+    "name": "Sabaody Archipelago General Store",
+    "island_id": "sabaody",
+    "npc_id": "sabaody_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "fishman_island_general",
+    "name": "Fish-Man Island General Store",
+    "island_id": "fishman_island",
+    "npc_id": "fishman_island_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "punk_hazard_general",
+    "name": "Punk Hazard General Store",
+    "island_id": "punk_hazard",
+    "npc_id": "punk_hazard_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "dressrosa_general",
+    "name": "Dressrosa General Store",
+    "island_id": "dressrosa",
+    "npc_id": "dressrosa_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "zou_general",
+    "name": "Zou General Store",
+    "island_id": "zou",
+    "npc_id": "zou_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "whole_cake_general",
+    "name": "Whole Cake Island General Store",
+    "island_id": "whole_cake",
+    "npc_id": "whole_cake_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "wano_general",
+    "name": "Wano General Store",
+    "island_id": "wano",
+    "npc_id": "wano_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "egghead_general",
+    "name": "Egghead General Store",
+    "island_id": "egghead",
+    "npc_id": "egghead_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "elbaf_general",
+    "name": "Elbaf General Store",
+    "island_id": "elbaf",
+    "npc_id": "elbaf_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  },
+  {
+    "id": "laugh_tale_general",
+    "name": "Laugh Tale General Store",
+    "island_id": "laugh_tale",
+    "npc_id": "laugh_tale_merchant",
+    "inventory": [
+      {
+        "item_id": "bread",
+        "price": 25
+      },
+      {
+        "item_id": "water",
+        "price": 20
+      },
+      {
+        "item_id": "bandage",
+        "price": 50
+      }
+    ]
+  }
+]

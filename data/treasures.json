@@ -1,0 +1,1478 @@
+[
+  {
+    "id": "foosha_village_common_chest",
+    "island_id": "foosha_village",
+    "name": "Foosha Village Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 53,
+    "respawn_hours": 24
+  },
+  {
+    "id": "foosha_village_hidden_cache",
+    "island_id": "foosha_village",
+    "name": "Foosha Village Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 105,
+    "respawn_hours": 72
+  },
+  {
+    "id": "mt_colubo_common_chest",
+    "island_id": "mt_colubo",
+    "name": "Mt. Colubo Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 65,
+    "respawn_hours": 24
+  },
+  {
+    "id": "mt_colubo_hidden_cache",
+    "island_id": "mt_colubo",
+    "name": "Mt. Colubo Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 125,
+    "respawn_hours": 72
+  },
+  {
+    "id": "dawn_island_coast_common_chest",
+    "island_id": "dawn_island_coast",
+    "name": "Dawn Island Coast Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 65,
+    "respawn_hours": 24
+  },
+  {
+    "id": "dawn_island_coast_hidden_cache",
+    "island_id": "dawn_island_coast",
+    "name": "Dawn Island Coast Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 125,
+    "respawn_hours": 72
+  },
+  {
+    "id": "shells_town_common_chest",
+    "island_id": "shells_town",
+    "name": "Shells Town Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 80,
+    "respawn_hours": 24
+  },
+  {
+    "id": "shells_town_hidden_cache",
+    "island_id": "shells_town",
+    "name": "Shells Town Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 150,
+    "respawn_hours": 72
+  },
+  {
+    "id": "orange_town_common_chest",
+    "island_id": "orange_town",
+    "name": "Orange Town Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 80,
+    "respawn_hours": 24
+  },
+  {
+    "id": "orange_town_hidden_cache",
+    "island_id": "orange_town",
+    "name": "Orange Town Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 150,
+    "respawn_hours": 72
+  },
+  {
+    "id": "syrup_village_common_chest",
+    "island_id": "syrup_village",
+    "name": "Syrup Village Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 95,
+    "respawn_hours": 24
+  },
+  {
+    "id": "syrup_village_hidden_cache",
+    "island_id": "syrup_village",
+    "name": "Syrup Village Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 175,
+    "respawn_hours": 72
+  },
+  {
+    "id": "gecko_islands_common_chest",
+    "island_id": "gecko_islands",
+    "name": "Gecko Islands Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 98,
+    "respawn_hours": 24
+  },
+  {
+    "id": "gecko_islands_hidden_cache",
+    "island_id": "gecko_islands",
+    "name": "Gecko Islands Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 180,
+    "respawn_hours": 72
+  },
+  {
+    "id": "baratie_common_chest",
+    "island_id": "baratie",
+    "name": "Baratie Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 110,
+    "respawn_hours": 24
+  },
+  {
+    "id": "baratie_hidden_cache",
+    "island_id": "baratie",
+    "name": "Baratie Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 200,
+    "respawn_hours": 72
+  },
+  {
+    "id": "conomi_village_common_chest",
+    "island_id": "conomi_village",
+    "name": "Conomi Village Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 116,
+    "respawn_hours": 24
+  },
+  {
+    "id": "conomi_village_hidden_cache",
+    "island_id": "conomi_village",
+    "name": "Conomi Village Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 210,
+    "respawn_hours": 72
+  },
+  {
+    "id": "arlong_park_common_chest",
+    "island_id": "arlong_park",
+    "name": "Arlong Park Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 125,
+    "respawn_hours": 24
+  },
+  {
+    "id": "arlong_park_hidden_cache",
+    "island_id": "arlong_park",
+    "name": "Arlong Park Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 225,
+    "respawn_hours": 72
+  },
+  {
+    "id": "loguetown_common_chest",
+    "island_id": "loguetown",
+    "name": "Loguetown Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 155,
+    "respawn_hours": 24
+  },
+  {
+    "id": "loguetown_hidden_cache",
+    "island_id": "loguetown",
+    "name": "Loguetown Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 275,
+    "respawn_hours": 72
+  },
+  {
+    "id": "reverse_mountain_common_chest",
+    "island_id": "reverse_mountain",
+    "name": "Reverse Mountain Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 185,
+    "respawn_hours": 24
+  },
+  {
+    "id": "reverse_mountain_hidden_cache",
+    "island_id": "reverse_mountain",
+    "name": "Reverse Mountain Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 325,
+    "respawn_hours": 72
+  },
+  {
+    "id": "twin_cape_common_chest",
+    "island_id": "twin_cape",
+    "name": "Twin Cape Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 200,
+    "respawn_hours": 24
+  },
+  {
+    "id": "twin_cape_hidden_cache",
+    "island_id": "twin_cape",
+    "name": "Twin Cape Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 350,
+    "respawn_hours": 72
+  },
+  {
+    "id": "whiskey_peak_common_chest",
+    "island_id": "whiskey_peak",
+    "name": "Whiskey Peak Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 215,
+    "respawn_hours": 24
+  },
+  {
+    "id": "whiskey_peak_hidden_cache",
+    "island_id": "whiskey_peak",
+    "name": "Whiskey Peak Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 375,
+    "respawn_hours": 72
+  },
+  {
+    "id": "little_garden_common_chest",
+    "island_id": "little_garden",
+    "name": "Little Garden Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 245,
+    "respawn_hours": 24
+  },
+  {
+    "id": "little_garden_hidden_cache",
+    "island_id": "little_garden",
+    "name": "Little Garden Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 425,
+    "respawn_hours": 72
+  },
+  {
+    "id": "drum_island_common_chest",
+    "island_id": "drum_island",
+    "name": "Drum Island Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 275,
+    "respawn_hours": 24
+  },
+  {
+    "id": "drum_island_hidden_cache",
+    "island_id": "drum_island",
+    "name": "Drum Island Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 475,
+    "respawn_hours": 72
+  },
+  {
+    "id": "nanohana_common_chest",
+    "island_id": "nanohana",
+    "name": "Nanohana Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 305,
+    "respawn_hours": 24
+  },
+  {
+    "id": "nanohana_hidden_cache",
+    "island_id": "nanohana",
+    "name": "Nanohana Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 525,
+    "respawn_hours": 72
+  },
+  {
+    "id": "rainbase_common_chest",
+    "island_id": "rainbase",
+    "name": "Rainbase Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 320,
+    "respawn_hours": 24
+  },
+  {
+    "id": "rainbase_hidden_cache",
+    "island_id": "rainbase",
+    "name": "Rainbase Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 550,
+    "respawn_hours": 72
+  },
+  {
+    "id": "alubarna_common_chest",
+    "island_id": "alubarna",
+    "name": "Alubarna Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 350,
+    "respawn_hours": 24
+  },
+  {
+    "id": "alubarna_hidden_cache",
+    "island_id": "alubarna",
+    "name": "Alubarna Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 600,
+    "respawn_hours": 72
+  },
+  {
+    "id": "yuba_common_chest",
+    "island_id": "yuba",
+    "name": "Yuba Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 335,
+    "respawn_hours": 24
+  },
+  {
+    "id": "yuba_hidden_cache",
+    "island_id": "yuba",
+    "name": "Yuba Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 575,
+    "respawn_hours": 72
+  },
+  {
+    "id": "royal_mausoleum_common_chest",
+    "island_id": "royal_mausoleum",
+    "name": "Royal Mausoleum Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 395,
+    "respawn_hours": 24
+  },
+  {
+    "id": "royal_mausoleum_hidden_cache",
+    "island_id": "royal_mausoleum",
+    "name": "Royal Mausoleum Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 675,
+    "respawn_hours": 72
+  },
+  {
+    "id": "mock_town_common_chest",
+    "island_id": "mock_town",
+    "name": "Mock Town Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 410,
+    "respawn_hours": 24
+  },
+  {
+    "id": "mock_town_hidden_cache",
+    "island_id": "mock_town",
+    "name": "Mock Town Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 700,
+    "respawn_hours": 72
+  },
+  {
+    "id": "crickets_house_common_chest",
+    "island_id": "crickets_house",
+    "name": "Cricket's House Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 410,
+    "respawn_hours": 24
+  },
+  {
+    "id": "crickets_house_hidden_cache",
+    "island_id": "crickets_house",
+    "name": "Cricket's House Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 700,
+    "respawn_hours": 72
+  },
+  {
+    "id": "angel_beach_common_chest",
+    "island_id": "angel_beach",
+    "name": "Angel Beach Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 455,
+    "respawn_hours": 24
+  },
+  {
+    "id": "angel_beach_hidden_cache",
+    "island_id": "angel_beach",
+    "name": "Angel Beach Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 775,
+    "respawn_hours": 72
+  },
+  {
+    "id": "upper_yard_common_chest",
+    "island_id": "upper_yard",
+    "name": "Upper Yard Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 485,
+    "respawn_hours": 24
+  },
+  {
+    "id": "upper_yard_hidden_cache",
+    "island_id": "upper_yard",
+    "name": "Upper Yard Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 825,
+    "respawn_hours": 72
+  },
+  {
+    "id": "gods_shrine_common_chest",
+    "island_id": "gods_shrine",
+    "name": "God's Shrine Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 530,
+    "respawn_hours": 24
+  },
+  {
+    "id": "gods_shrine_hidden_cache",
+    "island_id": "gods_shrine",
+    "name": "God's Shrine Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 900,
+    "respawn_hours": 72
+  },
+  {
+    "id": "shandora_common_chest",
+    "island_id": "shandora",
+    "name": "Shandora Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 530,
+    "respawn_hours": 24
+  },
+  {
+    "id": "shandora_hidden_cache",
+    "island_id": "shandora",
+    "name": "Shandora Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 900,
+    "respawn_hours": 72
+  },
+  {
+    "id": "ark_maxim_common_chest",
+    "island_id": "ark_maxim",
+    "name": "Ark Maxim Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 590,
+    "respawn_hours": 24
+  },
+  {
+    "id": "ark_maxim_hidden_cache",
+    "island_id": "ark_maxim",
+    "name": "Ark Maxim Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1000,
+    "respawn_hours": 72
+  },
+  {
+    "id": "water_7_common_chest",
+    "island_id": "water_7",
+    "name": "Water 7 Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 620,
+    "respawn_hours": 24
+  },
+  {
+    "id": "water_7_hidden_cache",
+    "island_id": "water_7",
+    "name": "Water 7 Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1050,
+    "respawn_hours": 72
+  },
+  {
+    "id": "enies_lobby_common_chest",
+    "island_id": "enies_lobby",
+    "name": "Enies Lobby Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 710,
+    "respawn_hours": 24
+  },
+  {
+    "id": "enies_lobby_hidden_cache",
+    "island_id": "enies_lobby",
+    "name": "Enies Lobby Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1200,
+    "respawn_hours": 72
+  },
+  {
+    "id": "thriller_bark_common_chest",
+    "island_id": "thriller_bark",
+    "name": "Thriller Bark Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 770,
+    "respawn_hours": 24
+  },
+  {
+    "id": "thriller_bark_hidden_cache",
+    "island_id": "thriller_bark",
+    "name": "Thriller Bark Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1300,
+    "respawn_hours": 72
+  },
+  {
+    "id": "sabaody_common_chest",
+    "island_id": "sabaody",
+    "name": "Sabaody Archipelago Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 950,
+    "respawn_hours": 24
+  },
+  {
+    "id": "sabaody_hidden_cache",
+    "island_id": "sabaody",
+    "name": "Sabaody Archipelago Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1600,
+    "respawn_hours": 72
+  },
+  {
+    "id": "fishman_island_common_chest",
+    "island_id": "fishman_island",
+    "name": "Fish-Man Island Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 1100,
+    "respawn_hours": 24
+  },
+  {
+    "id": "fishman_island_hidden_cache",
+    "island_id": "fishman_island",
+    "name": "Fish-Man Island Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 1850,
+    "respawn_hours": 72
+  },
+  {
+    "id": "punk_hazard_common_chest",
+    "island_id": "punk_hazard",
+    "name": "Punk Hazard Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 1250,
+    "respawn_hours": 24
+  },
+  {
+    "id": "punk_hazard_hidden_cache",
+    "island_id": "punk_hazard",
+    "name": "Punk Hazard Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 2100,
+    "respawn_hours": 72
+  },
+  {
+    "id": "dressrosa_common_chest",
+    "island_id": "dressrosa",
+    "name": "Dressrosa Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 1400,
+    "respawn_hours": 24
+  },
+  {
+    "id": "dressrosa_hidden_cache",
+    "island_id": "dressrosa",
+    "name": "Dressrosa Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 2350,
+    "respawn_hours": 72
+  },
+  {
+    "id": "zou_common_chest",
+    "island_id": "zou",
+    "name": "Zou Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 1610,
+    "respawn_hours": 24
+  },
+  {
+    "id": "zou_hidden_cache",
+    "island_id": "zou",
+    "name": "Zou Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 2700,
+    "respawn_hours": 72
+  },
+  {
+    "id": "whole_cake_common_chest",
+    "island_id": "whole_cake",
+    "name": "Whole Cake Island Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 1790,
+    "respawn_hours": 24
+  },
+  {
+    "id": "whole_cake_hidden_cache",
+    "island_id": "whole_cake",
+    "name": "Whole Cake Island Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 3000,
+    "respawn_hours": 72
+  },
+  {
+    "id": "wano_common_chest",
+    "island_id": "wano",
+    "name": "Wano Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 2000,
+    "respawn_hours": 24
+  },
+  {
+    "id": "wano_hidden_cache",
+    "island_id": "wano",
+    "name": "Wano Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 3350,
+    "respawn_hours": 72
+  },
+  {
+    "id": "egghead_common_chest",
+    "island_id": "egghead",
+    "name": "Egghead Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 2330,
+    "respawn_hours": 24
+  },
+  {
+    "id": "egghead_hidden_cache",
+    "island_id": "egghead",
+    "name": "Egghead Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 3900,
+    "respawn_hours": 72
+  },
+  {
+    "id": "elbaf_common_chest",
+    "island_id": "elbaf",
+    "name": "Elbaf Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 2570,
+    "respawn_hours": 24
+  },
+  {
+    "id": "elbaf_hidden_cache",
+    "island_id": "elbaf",
+    "name": "Elbaf Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 4300,
+    "respawn_hours": 72
+  },
+  {
+    "id": "laugh_tale_common_chest",
+    "island_id": "laugh_tale",
+    "name": "Laugh Tale Supply Chest",
+    "requires_discovery": false,
+    "rewards": [
+      {
+        "item_id": "bread",
+        "quantity": 1
+      },
+      {
+        "item_id": "water",
+        "quantity": 1
+      }
+    ],
+    "beli": 2840,
+    "respawn_hours": 24
+  },
+  {
+    "id": "laugh_tale_hidden_cache",
+    "island_id": "laugh_tale",
+    "name": "Laugh Tale Hidden Cache",
+    "requires_discovery": true,
+    "rewards": [
+      {
+        "item_id": "iron_ore",
+        "quantity": 2
+      },
+      {
+        "item_id": "oak_wood",
+        "quantity": 2
+      }
+    ],
+    "beli": 4750,
+    "respawn_hours": 72
+  }
+]
