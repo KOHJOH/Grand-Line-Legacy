@@ -237,3 +237,64 @@ CREATE TABLE IF NOT EXISTS active_world_events (
 
 CREATE INDEX IF NOT EXISTS idx_active_world_events_status
     ON active_world_events(status, island_id, ends_at);
+
+-- Sprint 8: Ships, ocean travel, and sailing encounters
+CREATE TABLE IF NOT EXISTS player_ships (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    ship_type TEXT NOT NULL,
+    nickname TEXT NOT NULL,
+    hull_hp INTEGER NOT NULL,
+    max_hull_hp INTEGER NOT NULL,
+    speed INTEGER NOT NULL,
+    cargo_capacity INTEGER NOT NULL,
+    crew_capacity INTEGER NOT NULL,
+    cannon_slots INTEGER NOT NULL DEFAULT 0,
+    upgrade_level INTEGER NOT NULL DEFAULT 0,
+    active BOOLEAN NOT NULL DEFAULT FALSE,
+    metadata JSONB NOT NULL DEFAULT '{}'::jsonb,
+    purchased_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_player_ships_owner
+    ON player_ships(discord_id, active);
+
+CREATE TABLE IF NOT EXISTS ship_cargo (
+    ship_id BIGINT NOT NULL REFERENCES player_ships(id) ON DELETE CASCADE,
+    item_id TEXT NOT NULL,
+    quantity INTEGER NOT NULL DEFAULT 1,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY(ship_id, item_id)
+);
+
+CREATE TABLE IF NOT EXISTS travel_sessions (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    origin_island TEXT NOT NULL,
+    destination_island TEXT NOT NULL,
+    ship_id BIGINT NOT NULL REFERENCES player_ships(id) ON DELETE CASCADE,
+    duration_seconds INTEGER NOT NULL,
+    status TEXT NOT NULL DEFAULT 'sailing',
+    state JSONB NOT NULL DEFAULT '{}'::jsonb,
+    started_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    ends_at TIMESTAMPTZ NOT NULL,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_travel_sessions_active
+    ON travel_sessions(discord_id, status, ends_at);
+
+CREATE TABLE IF NOT EXISTS ocean_encounter_log (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    travel_session_id BIGINT NOT NULL REFERENCES travel_sessions(id) ON DELETE CASCADE,
+    encounter_id TEXT NOT NULL,
+    payload JSONB NOT NULL DEFAULT '{}'::jsonb,
+    resolved BOOLEAN NOT NULL DEFAULT FALSE,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    resolved_at TIMESTAMPTZ
+);
+
+CREATE INDEX IF NOT EXISTS idx_ocean_encounter_unresolved
+    ON ocean_encounter_log(discord_id, resolved, created_at);

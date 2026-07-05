@@ -21,6 +21,7 @@ COGS = [
     "cogs.islands",
     "cogs.world",
     "cogs.news_events",
+    "cogs.ships",
 ]
 
 class GrandLineBot(commands.Bot):

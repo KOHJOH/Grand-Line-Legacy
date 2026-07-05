@@ -329,5 +329,41 @@
     "description": "A bright fish found in healthy waters.",
     "stackable": true,
     "sell_value": 32
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Basic shipbuilding and crafting wood.",
+    "stackable": true,
+    "sell_value": 3
+  },
+  {
+    "id": "iron_fragment",
+    "name": "Iron Fragment",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Scrap iron useful for repairs and basic forging.",
+    "stackable": true,
+    "sell_value": 6
+  },
+  {
+    "id": "sea_king_scale",
+    "name": "Sea King Scale",
+    "type": "resource",
+    "rarity": "rare",
+    "description": "A tough scale from a young Sea King. Shipwrights and armorers value it.",
+    "stackable": true,
+    "sell_value": 120
+  },
+  {
+    "id": "sailcloth",
+    "name": "Sailcloth",
+    "type": "resource",
+    "rarity": "common",
+    "description": "Durable cloth used for ship repairs.",
+    "stackable": true,
+    "sell_value": 8
   }
 ]

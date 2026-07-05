@@ -1,0 +1,98 @@
+[
+  {
+    "id": "raft",
+    "name": "Starter Raft",
+    "class": "raft",
+    "price": 0,
+    "speed": 5,
+    "hull_hp": 80,
+    "cargo_capacity": 10,
+    "crew_capacity": 1,
+    "cannon_slots": 0,
+    "description": "A simple raft. It is slow, fragile, and perfect for a first voyage."
+  },
+  {
+    "id": "rowboat",
+    "name": "Rowboat",
+    "class": "small boat",
+    "price": 2500,
+    "speed": 7,
+    "hull_hp": 120,
+    "cargo_capacity": 18,
+    "crew_capacity": 2,
+    "cannon_slots": 0,
+    "description": "A small boat for short East Blue routes."
+  },
+  {
+    "id": "fishing_boat",
+    "name": "Fishing Boat",
+    "class": "utility",
+    "price": 7500,
+    "speed": 6,
+    "hull_hp": 180,
+    "cargo_capacity": 35,
+    "crew_capacity": 3,
+    "cannon_slots": 1,
+    "description": "A sturdy coastal vessel with extra storage for fish and cargo."
+  },
+  {
+    "id": "sloop",
+    "name": "Sloop",
+    "class": "fast ship",
+    "price": 18000,
+    "speed": 11,
+    "hull_hp": 260,
+    "cargo_capacity": 45,
+    "crew_capacity": 5,
+    "cannon_slots": 2,
+    "description": "A quick ship used by rookie pirates, couriers, and scouts."
+  },
+  {
+    "id": "caravel",
+    "name": "Caravel",
+    "class": "exploration ship",
+    "price": 45000,
+    "speed": 10,
+    "hull_hp": 420,
+    "cargo_capacity": 90,
+    "crew_capacity": 8,
+    "cannon_slots": 4,
+    "description": "A balanced ship suited for Grand Line exploration."
+  },
+  {
+    "id": "brigantine",
+    "name": "Brigantine",
+    "class": "combat ship",
+    "price": 120000,
+    "speed": 9,
+    "hull_hp": 780,
+    "cargo_capacity": 130,
+    "crew_capacity": 14,
+    "cannon_slots": 8,
+    "description": "A dangerous pirate vessel with room for a real crew."
+  },
+  {
+    "id": "galleon",
+    "name": "Galleon",
+    "class": "large ship",
+    "price": 300000,
+    "speed": 7,
+    "hull_hp": 1400,
+    "cargo_capacity": 260,
+    "crew_capacity": 24,
+    "cannon_slots": 14,
+    "description": "A large ocean-going vessel built for long voyages and fleet battles."
+  },
+  {
+    "id": "marine_battleship",
+    "name": "Marine Battleship",
+    "class": "warship",
+    "price": 750000,
+    "speed": 6,
+    "hull_hp": 2400,
+    "cargo_capacity": 320,
+    "crew_capacity": 50,
+    "cannon_slots": 28,
+    "description": "A heavily armed Marine vessel. Normally restricted to high Marine ranks."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "drifting_crate",
+    "name": "Drifting Cargo Crate",
+    "type": "treasure",
+    "weight": 18,
+    "description": "A sealed crate bobs beside the ship.",
+    "rewards": {"beli": 300, "items": [{"item_id": "wood", "quantity": 3}]}
+  },
+  {
+    "id": "lost_sailor",
+    "name": "Lost Sailor",
+    "type": "rescue",
+    "weight": 12,
+    "description": "A stranded sailor waves from a broken plank.",
+    "rewards": {"beli": 450, "items": [{"item_id": "bread", "quantity": 1}]}
+  },
+  {
+    "id": "minor_storm",
+    "name": "Minor Storm",
+    "type": "hazard",
+    "weight": 14,
+    "description": "Dark clouds roll in and rough waves batter the hull.",
+    "damage": 25,
+    "rewards": {"beli": 0, "items": []}
+  },
+  {
+    "id": "pirate_skiff",
+    "name": "Pirate Skiff",
+    "type": "combat",
+    "weight": 10,
+    "description": "A small pirate skiff cuts across your route.",
+    "damage": 15,
+    "rewards": {"beli": 700, "items": [{"item_id": "iron_fragment", "quantity": 2}]}
+  },
+  {
+    "id": "marine_inspection",
+    "name": "Marine Inspection",
+    "type": "faction",
+    "weight": 8,
+    "description": "A Marine patrol signals your ship to slow down.",
+    "rewards": {"beli": 100, "items": []}
+  },
+  {
+    "id": "sea_king_shadow",
+    "name": "Sea King Shadow",
+    "type": "danger",
+    "weight": 4,
+    "description": "A massive shadow passes beneath your ship. The crew holds its breath.",
+    "damage": 45,
+    "rewards": {"beli": 1000, "items": [{"item_id": "sea_king_scale", "quantity": 1}]}
+  },
+  {
+    "id": "calm_current",
+    "name": "Calm Current",
+    "type": "boon",
+    "weight": 16,
+    "description": "A friendly current carries your ship forward.",
+    "speed_bonus": 2,
+    "rewards": {"beli": 0, "items": []}
+  }
+]

@@ -19,6 +19,8 @@ class GameData:
     treasures: list[dict[str, Any]] = field(default_factory=list)
     island_details: list[dict[str, Any]] = field(default_factory=list)
     world_events: list[dict[str, Any]] = field(default_factory=list)
+    ships: list[dict[str, Any]] = field(default_factory=list)
+    ocean_encounters: list[dict[str, Any]] = field(default_factory=list)
     loot_tables: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     @classmethod
@@ -41,6 +43,8 @@ class GameData:
             treasures=_load_json_list_optional(root / "treasures.json"),
             island_details=_load_json_list_optional(root / "island_details.json"),
             world_events=_load_json_list_optional(root / "world_events.json"),
+            ships=_load_json_list_optional(root / "ships.json"),
+            ocean_encounters=_load_json_list_optional(root / "ocean_encounters.json"),
             loot_tables=loot_tables,
         )
 
