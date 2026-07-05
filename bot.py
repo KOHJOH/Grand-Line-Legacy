@@ -20,6 +20,7 @@ COGS = [
     "cogs.haki",
     "cogs.islands",
     "cogs.world",
+    "cogs.news_events",
 ]
 
 class GrandLineBot(commands.Bot):

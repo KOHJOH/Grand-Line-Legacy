@@ -203,3 +203,37 @@ CREATE TABLE IF NOT EXISTS world_event_log (
     payload JSONB NOT NULL DEFAULT '{}'::jsonb,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+-- Sprint 7: World News and active event engine
+CREATE TABLE IF NOT EXISTS world_news_articles (
+    id BIGSERIAL PRIMARY KEY,
+    headline TEXT NOT NULL,
+    body TEXT NOT NULL,
+    category TEXT NOT NULL DEFAULT 'general',
+    island_id TEXT,
+    player_id BIGINT REFERENCES players(discord_id) ON DELETE SET NULL,
+    payload JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_world_news_created_at
+    ON world_news_articles(created_at DESC);
+
+CREATE TABLE IF NOT EXISTS active_world_events (
+    id BIGSERIAL PRIMARY KEY,
+    event_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    region TEXT NOT NULL DEFAULT 'Global',
+    island_id TEXT NOT NULL DEFAULT 'global',
+    event_type TEXT NOT NULL DEFAULT 'general',
+    description TEXT NOT NULL,
+    effects JSONB NOT NULL DEFAULT '{}'::jsonb,
+    status TEXT NOT NULL DEFAULT 'active',
+    started_by BIGINT REFERENCES players(discord_id) ON DELETE SET NULL,
+    started_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    ends_at TIMESTAMPTZ NOT NULL,
+    ended_at TIMESTAMPTZ
+);
+
+CREATE INDEX IF NOT EXISTS idx_active_world_events_status
+    ON active_world_events(status, island_id, ends_at);

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "east_blue_fishing_festival",
+    "name": "East Blue Fishing Festival",
+    "region": "East Blue",
+    "island_id": "foosha_village",
+    "type": "festival",
+    "duration_minutes": 120,
+    "description": "Villagers gather at the docks for a fishing contest and temporary shop discounts.",
+    "effects": {"fishing_xp_bonus": 1.25, "shop_discount": 0.05},
+    "newsworthy": false
+  },
+  {
+    "id": "bandit_raid_foosha",
+    "name": "Bandit Raid on Foosha",
+    "region": "East Blue",
+    "island_id": "foosha_village",
+    "type": "invasion",
+    "duration_minutes": 90,
+    "description": "Bandits descend from Mt. Colubo. Players can defend villagers and earn reputation.",
+    "effects": {"spawn_bosses": ["higuma_the_bear"], "reputation_reward": 5},
+    "newsworthy": true
+  },
+  {
+    "id": "marine_inspection_loguetown",
+    "name": "Marine Inspection",
+    "region": "East Blue",
+    "island_id": "loguetown",
+    "type": "marine",
+    "duration_minutes": 180,
+    "description": "Marine patrols increase around Loguetown. Pirates with bounties may be challenged.",
+    "effects": {"marine_spawn_bonus": 1.5},
+    "newsworthy": true
+  },
+  {
+    "id": "aqua_laguna",
+    "name": "Aqua Laguna",
+    "region": "Paradise",
+    "island_id": "water_7",
+    "type": "disaster",
+    "duration_minutes": 240,
+    "description": "A massive sea surge floods Water 7, opening hidden routes and closing some shops.",
+    "effects": {"treasure_bonus": 1.4, "shop_closures": true},
+    "newsworthy": true
+  },
+  {
+    "id": "sea_king_migration",
+    "name": "Sea King Migration",
+    "region": "Global",
+    "island_id": "global",
+    "type": "ocean",
+    "duration_minutes": 360,
+    "description": "Sea Kings are moving between regions. Voyages become dangerous but rare materials appear.",
+    "effects": {"ocean_encounter_bonus": 2.0, "rare_material_bonus": 1.2},
+    "newsworthy": true
+  },
+  {
+    "id": "sky_lightning_storm",
+    "name": "Sky Lightning Storm",
+    "region": "Skypiea",
+    "island_id": "upper_yard",
+    "type": "weather",
+    "duration_minutes": 180,
+    "description": "Lightning storms rage over Upper Yard. Sky resources and Goro-related clues become easier to find.",
+    "effects": {"sky_resource_bonus": 1.5},
+    "newsworthy": true
+  }
+]

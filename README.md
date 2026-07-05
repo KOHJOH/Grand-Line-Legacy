@@ -33,3 +33,18 @@ Sprint 6 adds the Island/NPC living world layer on top of Sprint 5.
 ## Commit message
 
 `Sprint 6 - Island NPC Living World Engine`
+
+
+## Sprint 7 - World News + Event Engine
+
+Added:
+- `/news` and `/article`
+- `/events` for active world events near the player
+- `/eventtemplates` for viewing event definitions
+- Admin/test `/startevent` and `/endevent`
+- `world_news_articles` and `active_world_events` database tables
+- Static `data/world_events.json` event definitions
+- `NewsService` for publish/read article hooks
+- `EventService` for starting, ending, and rolling world events
+
+Commit message: `Sprint 7 - World News and Event Engine`
