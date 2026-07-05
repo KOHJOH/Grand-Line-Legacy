@@ -1,17 +1,19 @@
-# Grand Line: Legacy — Database Auto-Migration Patch
+# Grand Line: Legacy Profile/Schema Patch
 
-Replace these files in the repo:
+Replace these files in your GitHub repo:
 
-- `bot.py`
-- `core/database.py`
-
-Keep your existing `sql/schema.sql` file.
-
-What this does:
-- Connects to PostgreSQL
-- Runs `sql/schema.sql` automatically on startup
-- Creates missing tables before `/start` or other commands can use them
+- `cogs/profile.py`
+- `sql/schema.sql`
 
 Commit message:
 
-`Fix database schema initialization`
+`Fix profile missing race field and repair player schema`
+
+Railway should redeploy automatically. The startup schema initializer will add missing player columns like `race`, `faction`, `title`, `bounty`, `crew_name`, and `devil_fruit`.
+
+After redeploy, test:
+
+1. `/start`
+2. `/profile`
+
+If `/profile` errors again, send the new Railway logs.

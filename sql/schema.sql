@@ -1,5 +1,7 @@
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
+-- Core player table.
+-- The ALTER statements below intentionally repair early/partial production tables.
 CREATE TABLE IF NOT EXISTS players (
     discord_id BIGINT PRIMARY KEY,
     username TEXT NOT NULL,
@@ -8,14 +10,39 @@ CREATE TABLE IF NOT EXISTS players (
     beli INTEGER NOT NULL DEFAULT 0,
     race TEXT NOT NULL DEFAULT 'Human',
     faction TEXT NOT NULL DEFAULT 'Independent',
-    current_island TEXT NOT NULL DEFAULT 'foosha_village',
+    current_island TEXT NOT NULL DEFAULT 'Foosha Village',
     hp INTEGER NOT NULL DEFAULT 100,
     max_hp INTEGER NOT NULL DEFAULT 100,
     stamina INTEGER NOT NULL DEFAULT 100,
     max_stamina INTEGER NOT NULL DEFAULT 100,
+    title TEXT NOT NULL DEFAULT 'Rookie',
+    bounty BIGINT NOT NULL DEFAULT 0,
+    crew_name TEXT NOT NULL DEFAULT 'None',
+    devil_fruit TEXT NOT NULL DEFAULT 'None',
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+ALTER TABLE players ADD COLUMN IF NOT EXISTS discord_id BIGINT;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS username TEXT NOT NULL DEFAULT 'Unknown Pirate';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS level INTEGER NOT NULL DEFAULT 1;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS xp INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS beli INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS race TEXT NOT NULL DEFAULT 'Human';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS faction TEXT NOT NULL DEFAULT 'Independent';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS current_island TEXT NOT NULL DEFAULT 'Foosha Village';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS hp INTEGER NOT NULL DEFAULT 100;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS max_hp INTEGER NOT NULL DEFAULT 100;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS stamina INTEGER NOT NULL DEFAULT 100;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS max_stamina INTEGER NOT NULL DEFAULT 100;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS title TEXT NOT NULL DEFAULT 'Rookie';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS bounty BIGINT NOT NULL DEFAULT 0;
+ALTER TABLE players ADD COLUMN IF NOT EXISTS crew_name TEXT NOT NULL DEFAULT 'None';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS devil_fruit TEXT NOT NULL DEFAULT 'None';
+ALTER TABLE players ADD COLUMN IF NOT EXISTS created_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+ALTER TABLE players ADD COLUMN IF NOT EXISTS updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_players_discord_id_unique ON players(discord_id);
 
 CREATE TABLE IF NOT EXISTS player_inventory (
     id BIGSERIAL PRIMARY KEY,
@@ -23,8 +50,23 @@ CREATE TABLE IF NOT EXISTS player_inventory (
     item_id TEXT NOT NULL,
     quantity INTEGER NOT NULL DEFAULT 1,
     locked BOOLEAN NOT NULL DEFAULT FALSE,
+    instance_id UUID DEFAULT gen_random_uuid(),
+    durability INTEGER,
+    max_durability INTEGER,
+    metadata JSONB NOT NULL DEFAULT '{}'::jsonb,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     UNIQUE(discord_id, item_id)
+);
+
+CREATE TABLE IF NOT EXISTS player_equipment (
+    discord_id BIGINT PRIMARY KEY REFERENCES players(discord_id) ON DELETE CASCADE,
+    weapon_item_id TEXT,
+    armor_item_id TEXT,
+    accessory_1_item_id TEXT,
+    accessory_2_item_id TEXT,
+    tool_item_id TEXT,
+    cosmetic_item_id TEXT,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS player_quests (
@@ -46,25 +88,6 @@ CREATE TABLE IF NOT EXISTS boss_codex (
     PRIMARY KEY(discord_id, boss_id)
 );
 
-
--- Sprint 2: inventory, equipment, loot
-ALTER TABLE player_inventory
-    ADD COLUMN IF NOT EXISTS instance_id UUID DEFAULT gen_random_uuid(),
-    ADD COLUMN IF NOT EXISTS durability INTEGER,
-    ADD COLUMN IF NOT EXISTS max_durability INTEGER,
-    ADD COLUMN IF NOT EXISTS metadata JSONB NOT NULL DEFAULT '{}'::jsonb;
-
-CREATE TABLE IF NOT EXISTS player_equipment (
-    discord_id BIGINT PRIMARY KEY REFERENCES players(discord_id) ON DELETE CASCADE,
-    weapon_item_id TEXT,
-    armor_item_id TEXT,
-    accessory_1_item_id TEXT,
-    accessory_2_item_id TEXT,
-    tool_item_id TEXT,
-    cosmetic_item_id TEXT,
-    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
-);
-
 CREATE TABLE IF NOT EXISTS loot_history (
     id BIGSERIAL PRIMARY KEY,
     discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
@@ -74,7 +97,6 @@ CREATE TABLE IF NOT EXISTS loot_history (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- Sprint 3: combat and boss fights
 CREATE TABLE IF NOT EXISTS combat_sessions (
     id BIGSERIAL PRIMARY KEY,
     discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
@@ -89,12 +111,8 @@ CREATE TABLE IF NOT EXISTS combat_sessions (
     ended_at TIMESTAMPTZ,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+CREATE INDEX IF NOT EXISTS idx_combat_sessions_active ON combat_sessions(discord_id, status);
 
-CREATE INDEX IF NOT EXISTS idx_combat_sessions_active
-    ON combat_sessions(discord_id, status);
-
-
--- Sprint 4: Devil Fruit engine
 CREATE TABLE IF NOT EXISTS fruit_registry (
     fruit_id TEXT PRIMARY KEY,
     owner_discord_id BIGINT REFERENCES players(discord_id) ON DELETE SET NULL,
@@ -136,7 +154,6 @@ CREATE TABLE IF NOT EXISTS fruitdex_entries (
     PRIMARY KEY(discord_id, fruit_id)
 );
 
--- Sprint 5: Haki engine
 CREATE TABLE IF NOT EXISTS player_haki (
     discord_id BIGINT PRIMARY KEY REFERENCES players(discord_id) ON DELETE CASCADE,
     observation_unlocked BOOLEAN NOT NULL DEFAULT FALSE,
@@ -165,8 +182,6 @@ CREATE TABLE IF NOT EXISTS haki_training_log (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
-
--- Sprint 6: Island, NPC, shop, treasure, and discovery engine
 CREATE TABLE IF NOT EXISTS island_discoveries (
     discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
     island_id TEXT NOT NULL,
@@ -204,7 +219,6 @@ CREATE TABLE IF NOT EXISTS world_event_log (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
--- Sprint 7: World News and active event engine
 CREATE TABLE IF NOT EXISTS world_news_articles (
     id BIGSERIAL PRIMARY KEY,
     headline TEXT NOT NULL,
@@ -215,9 +229,7 @@ CREATE TABLE IF NOT EXISTS world_news_articles (
     payload JSONB NOT NULL DEFAULT '{}'::jsonb,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
-
-CREATE INDEX IF NOT EXISTS idx_world_news_created_at
-    ON world_news_articles(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_world_news_created_at ON world_news_articles(created_at DESC);
 
 CREATE TABLE IF NOT EXISTS active_world_events (
     id BIGSERIAL PRIMARY KEY,
@@ -234,11 +246,8 @@ CREATE TABLE IF NOT EXISTS active_world_events (
     ends_at TIMESTAMPTZ NOT NULL,
     ended_at TIMESTAMPTZ
 );
+CREATE INDEX IF NOT EXISTS idx_active_world_events_status ON active_world_events(status, island_id, ends_at);
 
-CREATE INDEX IF NOT EXISTS idx_active_world_events_status
-    ON active_world_events(status, island_id, ends_at);
-
--- Sprint 8: Ships, ocean travel, and sailing encounters
 CREATE TABLE IF NOT EXISTS player_ships (
     id BIGSERIAL PRIMARY KEY,
     discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
@@ -256,9 +265,7 @@ CREATE TABLE IF NOT EXISTS player_ships (
     purchased_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
-
-CREATE INDEX IF NOT EXISTS idx_player_ships_owner
-    ON player_ships(discord_id, active);
+CREATE INDEX IF NOT EXISTS idx_player_ships_owner ON player_ships(discord_id, active);
 
 CREATE TABLE IF NOT EXISTS ship_cargo (
     ship_id BIGINT NOT NULL REFERENCES player_ships(id) ON DELETE CASCADE,
@@ -281,9 +288,7 @@ CREATE TABLE IF NOT EXISTS travel_sessions (
     ends_at TIMESTAMPTZ NOT NULL,
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
-
-CREATE INDEX IF NOT EXISTS idx_travel_sessions_active
-    ON travel_sessions(discord_id, status, ends_at);
+CREATE INDEX IF NOT EXISTS idx_travel_sessions_active ON travel_sessions(discord_id, status, ends_at);
 
 CREATE TABLE IF NOT EXISTS ocean_encounter_log (
     id BIGSERIAL PRIMARY KEY,
@@ -295,6 +300,4 @@ CREATE TABLE IF NOT EXISTS ocean_encounter_log (
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     resolved_at TIMESTAMPTZ
 );
-
-CREATE INDEX IF NOT EXISTS idx_ocean_encounter_unresolved
-    ON ocean_encounter_log(discord_id, resolved, created_at);
+CREATE INDEX IF NOT EXISTS idx_ocean_encounter_unresolved ON ocean_encounter_log(discord_id, resolved, created_at);
