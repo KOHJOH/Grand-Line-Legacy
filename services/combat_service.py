@@ -11,6 +11,7 @@ from services.equipment_service import EquipmentService
 from services.item_service import ItemService
 from services.loot_service import LootService
 from services.quest_service import QuestService
+from services.haki_service import HakiService
 
 
 @dataclass(slots=True)
@@ -39,6 +40,7 @@ class CombatService:
         self.equipment_service = EquipmentService(db)
         self.loot_service = LootService(db, game_data)
         self.quest_service = QuestService(db)
+        self.haki_service = HakiService(db, game_data)
         self.bosses = {boss["id"]: boss for boss in game_data.bosses}
 
     def get_boss(self, boss_id: str) -> dict[str, Any] | None:
@@ -209,11 +211,13 @@ class CombatService:
         weapon_attack = int(equipment_stats.get("attack", 0))
         level = int(player["level"])
         focus = int(state.get("focus", 0))
+        haki_mods = await self.haki_service.combat_modifiers(int(player["discord_id"]))
+        haki_damage = 1.0 + float(haki_mods.get("damage_bonus", 0.0)) + float(haki_mods.get("pressure_bonus", 0.0))
         base = 20 + level * 4 + weapon_attack * 2 + focus * 10
         variance = random.uniform(0.85, 1.15)
-        crit_chance = 0.08 + focus * 0.04
+        crit_chance = 0.08 + focus * 0.04 + float(haki_mods.get("crit_bonus", 0.0))
         crit = random.random() < crit_chance
-        damage = int(base * multiplier * variance * (1.75 if crit else 1.0))
+        damage = int(base * multiplier * variance * haki_damage * (1.75 if crit else 1.0))
         state["focus"] = 0 if multiplier > 1.0 else focus
         return max(1, damage), crit
 
@@ -221,8 +225,15 @@ class CombatService:
         phase = int(session["phase"])
         level = int(boss.get("level", 1))
         ability = self._select_boss_ability(boss, phase, int(session["turn"]))
+        haki_mods = await self.haki_service.combat_modifiers(discord_id)
+        dodge_bonus = float(haki_mods.get("dodge_bonus", 0.0))
+        if dodge_bonus and random.random() < min(0.35, dodge_bonus):
+            return f"👁️ Your Observation Haki read **{boss['name']}** and you dodged **{ability['name']}**."
         base = 8 + level * 2 + phase * 12
         dmg = int(base * ability["multiplier"] * random.uniform(0.85, 1.15))
+        defense_bonus = float(haki_mods.get("defense_bonus", 0.0))
+        if defense_bonus:
+            dmg = max(1, int(dmg * (1.0 - min(0.45, defense_bonus))))
         if state.get("defending"):
             dmg = max(1, int(dmg * 0.45))
             state["defending"] = False

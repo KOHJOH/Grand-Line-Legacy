@@ -1,0 +1,59 @@
+[
+  {
+    "id": "observation",
+    "name": "Observation Haki",
+    "emoji": "👁️",
+    "description": "Sense enemy intent, detect hidden threats, and improve dodge timing.",
+    "unlock_level": 40,
+    "max_level": 100,
+    "training_stamina_cost": 15,
+    "training_xp_min": 12,
+    "training_xp_max": 24,
+    "tiers": [
+      {"name": "Dormant", "level": 0},
+      {"name": "Awakened", "level": 1},
+      {"name": "Skilled", "level": 25},
+      {"name": "Expert", "level": 50},
+      {"name": "Master", "level": 75},
+      {"name": "Future Sight Candidate", "level": 100}
+    ]
+  },
+  {
+    "id": "armament",
+    "name": "Armament Haki",
+    "emoji": "⚫",
+    "description": "Coat your body and weapons to increase offense, defense, and Logia counterplay.",
+    "unlock_level": 60,
+    "max_level": 100,
+    "training_stamina_cost": 18,
+    "training_xp_min": 10,
+    "training_xp_max": 22,
+    "tiers": [
+      {"name": "Locked", "level": 0},
+      {"name": "Basic Coating", "level": 1},
+      {"name": "Hardening", "level": 25},
+      {"name": "Flow", "level": 55},
+      {"name": "Internal Destruction Candidate", "level": 85},
+      {"name": "Master", "level": 100}
+    ]
+  },
+  {
+    "id": "conqueror",
+    "name": "Conqueror's Haki",
+    "emoji": "👑",
+    "description": "Overwhelm weak enemies with willpower and clash with kings.",
+    "unlock_level": 120,
+    "max_level": 100,
+    "training_stamina_cost": 30,
+    "training_xp_min": 6,
+    "training_xp_max": 16,
+    "requires_potential": true,
+    "tiers": [
+      {"name": "Dormant", "level": 0},
+      {"name": "Awakened", "level": 1},
+      {"name": "Controlled", "level": 35},
+      {"name": "Mastered", "level": 70},
+      {"name": "Conqueror's Coating Candidate", "level": 100}
+    ]
+  }
+]

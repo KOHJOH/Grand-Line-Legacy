@@ -5,6 +5,7 @@ from discord import app_commands
 from discord.ext import commands
 
 from services.player_service import PlayerService
+from services.haki_service import HakiService
 
 class ProfileCog(commands.Cog):
     def __init__(self, bot: commands.Bot) -> None:
@@ -26,6 +27,16 @@ class ProfileCog(commands.Cog):
         embed.add_field(name="Island", value=player["current_island"])
         embed.add_field(name="HP", value=f"{player['hp']}/{player['max_hp']}")
         embed.add_field(name="Stamina", value=f"{player['stamina']}/{player['max_stamina']}")
+        haki = await HakiService(self.bot.db, self.bot.game_data).get_profile(interaction.user.id)
+        embed.add_field(
+            name="Haki",
+            value=(
+                f"👁️ Observation {haki['observation_level']}/100\n"
+                f"⚫ Armament {haki['armament_level']}/100\n"
+                f"👑 Conqueror {haki['conqueror_level']}/100"
+            ),
+            inline=False,
+        )
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
 async def setup(bot: commands.Bot):

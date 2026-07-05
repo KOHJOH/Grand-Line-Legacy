@@ -135,3 +135,32 @@ CREATE TABLE IF NOT EXISTS fruitdex_entries (
     updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     PRIMARY KEY(discord_id, fruit_id)
 );
+
+-- Sprint 5: Haki engine
+CREATE TABLE IF NOT EXISTS player_haki (
+    discord_id BIGINT PRIMARY KEY REFERENCES players(discord_id) ON DELETE CASCADE,
+    observation_unlocked BOOLEAN NOT NULL DEFAULT FALSE,
+    observation_level INTEGER NOT NULL DEFAULT 0,
+    observation_xp INTEGER NOT NULL DEFAULT 0,
+    armament_unlocked BOOLEAN NOT NULL DEFAULT FALSE,
+    armament_level INTEGER NOT NULL DEFAULT 0,
+    armament_xp INTEGER NOT NULL DEFAULT 0,
+    conqueror_potential BOOLEAN NOT NULL DEFAULT FALSE,
+    conqueror_unlocked BOOLEAN NOT NULL DEFAULT FALSE,
+    conqueror_level INTEGER NOT NULL DEFAULT 0,
+    conqueror_xp INTEGER NOT NULL DEFAULT 0,
+    active_observation BOOLEAN NOT NULL DEFAULT FALSE,
+    active_armament BOOLEAN NOT NULL DEFAULT FALSE,
+    active_conqueror BOOLEAN NOT NULL DEFAULT FALSE,
+    haki_history JSONB NOT NULL DEFAULT '[]'::jsonb,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS haki_training_log (
+    id BIGSERIAL PRIMARY KEY,
+    discord_id BIGINT NOT NULL REFERENCES players(discord_id) ON DELETE CASCADE,
+    haki_type TEXT NOT NULL,
+    xp_gained INTEGER NOT NULL,
+    level_after INTEGER NOT NULL,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

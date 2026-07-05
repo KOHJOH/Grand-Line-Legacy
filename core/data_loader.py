@@ -13,6 +13,7 @@ class GameData:
     quests: list[dict[str, Any]]
     items: list[dict[str, Any]]
     fruits: list[dict[str, Any]]
+    haki: list[dict[str, Any]]
     loot_tables: dict[str, dict[str, Any]] = field(default_factory=dict)
 
     @classmethod
@@ -29,6 +30,7 @@ class GameData:
             quests=_load_json_list(root / "quests.json"),
             items=_load_json_list(root / "items.json"),
             fruits=_load_json_list(root / "fruits.json"),
+            haki=_load_json_list(root / "haki.json"),
             loot_tables=loot_tables,
         )
 

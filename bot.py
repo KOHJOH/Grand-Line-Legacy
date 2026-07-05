@@ -17,6 +17,7 @@ COGS = [
     "cogs.loot",
     "cogs.combat",
     "cogs.fruits",
+    "cogs.haki",
     "cogs.world",
 ]
 
