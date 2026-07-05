@@ -1,7 +1,0 @@
-{
-  "higuma": {"beli": [80, 180], "xp": [60, 120], "drops": [{"item_id":"higuma_cloak","chance":0.08,"qty":[1,1]}, {"item_id":"bread","chance":0.50,"qty":[1,3]}, {"item_id":"iron_cutlass","chance":0.12,"qty":[1,1]}]},
-  "mountain_bear_alpha": {"beli": [40, 100], "xp": [45, 90], "drops": [{"item_id":"meat_skewer","chance":0.60,"qty":[1,2]}, {"item_id":"leather_vest","chance":0.10,"qty":[1,1]}]},
-  "axe_hand_morgan": {"beli": [250, 500], "xp": [240, 400], "drops": [{"item_id":"marine_cape","chance":0.12,"qty":[1,1]}, {"item_id":"iron_ore","chance":0.65,"qty":[2,6]}]},
-  "buggy": {"beli": [300, 700], "xp": [350, 600], "drops": [{"item_id":"buggy_ball_recipe","chance":0.10,"qty":[1,1]}, {"item_id":"lucky_coin","chance":0.20,"qty":[1,1]}]},
-  "default": {"beli": [25, 90], "xp": [25, 80], "drops": [{"item_id":"bread","chance":0.25,"qty":[1,2]}, {"item_id":"water","chance":0.25,"qty":[1,2]}]}
-}

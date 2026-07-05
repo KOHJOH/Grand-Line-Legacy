@@ -1,7 +1,0 @@
-[
-  {"id":"foosha_village","name":"Foosha Village","region":"East Blue","level_range":"1-10","description":"A peaceful village where many journeys begin."},
-  {"id":"mt_colubo","name":"Mt. Colubo","region":"East Blue","level_range":"5-15","description":"Forested mountain paths, bandit camps, and hidden childhood trails."},
-  {"id":"shells_town","name":"Shells Town","region":"East Blue","level_range":"10-20","description":"A Marine-controlled town with a strict base and busy harbor."},
-  {"id":"orange_town","name":"Orange Town","region":"East Blue","level_range":"10-18","description":"A rebuilding town scarred by pirate circus raids."},
-  {"id":"syrup_village","name":"Syrup Village","region":"East Blue","level_range":"15-25","description":"A quiet village with forests, orchards, and suspicious shadows."}
-]
